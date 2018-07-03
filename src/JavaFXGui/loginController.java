@@ -27,20 +27,33 @@ public class loginController implements Initializable {
     private PasswordField txtPassword;
     @FXML
     private void btnSignInAction(ActionEvent event) throws Exception {
+
+        int loginTries = 0;
+        String userState = "";
+        String userID = txtUserID.getText();
+        String password = txtPassword.getText();
+
+        userState = verifyCredentials.run(userID, password);
+
+        lblMessage.setText(userState);
+    }
+
+/*
         if (txtUserID.getText().equals("test") && txtPassword.getText().equals("test")) {
             lblMessage.setText("Username or Password is valid!");
-/*            ((Node) (event.getSource())).getScene().getWindow().hide();
+           ((Node) (event.getSource())).getScene().getWindow().hide();
             Parent parent = FXMLLoader.load(getClass().getResource("DateSelection.fxml"));
             Stage stage = new Stage();
             Scene scene = new Scene(parent);
             stage.setScene(scene);
             stage.setTitle("Date Selection");
             stage.show();
-*/
+
         } else {
             lblMessage.setText("Username or Password is invalid!");
         }
-    }
+*/
+
     /**
      * Initializes the controller class.
      * @param url
