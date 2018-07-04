@@ -1,10 +1,17 @@
-package JavaFXGui;
+package Main;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
+/**
+ * Home Class.  Launches Login interface.
+ * @author russellfincham
+ * @version 0.2
+ * @since 04-07-18
+ */
 
 public class Main extends Application {
 
@@ -15,9 +22,9 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
-        Scene scene = new Scene(root);
-        primaryStage.setScene(scene);
+        Parent root = FXMLLoader.load(getClass().getResource("/JavaFxGui/Login.fxml"));
+        Scene login = new Scene(root);
+        primaryStage.setScene(login);
         primaryStage.setTitle("Welcome");
         primaryStage.show();
     }
