@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- * Home Class.  Launches Login interface.
+ * HomeController Class.  Launches Login interface.
  * @author russellfincham
  * @version 0.2
  * @since 04-07-18
