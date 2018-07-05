@@ -24,17 +24,12 @@ public class SettingsQuery {
 
         String settingValue = "";
 
-        String loginString = DbCredentials.DbUser();
+        String loginString[] = DbCredentials.DbUser();
 
-        String data[] = loginString.split(",");
-        String userName = data[0];
-        String password = data[1];
-        String dbUrl = data[2];
-
+        //loginString[0] = userName, loginString[1] = password, loginString[2] = DbUrl
         try (
-                Connection conn = DriverManager.getConnection(dbUrl, userName, password);
+                Connection conn = DriverManager.getConnection(loginString[2], loginString[0], loginString[1]);
                 Statement stmt = conn.createStatement();
-
         ) {
 
             ResultSet rset = stmt.executeQuery(sqlQuery);

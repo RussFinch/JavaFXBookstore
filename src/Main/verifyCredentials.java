@@ -8,8 +8,8 @@ import Database.DbCredentials;
 /**
  * This class manages the System login process.
  * @author russellfincham
- * @version 0.1
- * @since 04-07-18
+ * @version 0.2
+ * @since 05-07-18
  */
 
 public class verifyCredentials {
@@ -23,14 +23,11 @@ public class verifyCredentials {
     public static String run(String receivedUserID, String receivedPwd) throws FileNotFoundException {
 
         //call DbLogin interface to retrieve Database access credentials.
-        String loginString = DbCredentials.DbUser();
-
-        String data[] = loginString.split(",");
-        String userName = data[0];
-        String password = data[1];
+        String loginString[] = DbCredentials.DbUser();
 
         //Validate input credentials against database user credentials.
-        if (receivedUserID.equals(userName) && receivedPwd.equals(password)) {
+        //loginString[0] = userName, loginString[1] = password
+        if (receivedUserID.equals(loginString[0]) && receivedPwd.equals(loginString[1])) {
             return "Signed In";
         }
         else {

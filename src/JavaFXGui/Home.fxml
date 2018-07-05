@@ -14,7 +14,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXGui.HomeController">
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXGui.HomeController">
    <children>
       <GridPane prefHeight="768.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
@@ -29,7 +29,7 @@
             <Pane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="225.0">
                <children>
                   <Group layoutX="49.0" layoutY="21.0" />
-                  <Button layoutX="138.0" layoutY="657.0" mnemonicParsing="false" text="Search" />
+                  <Button fx:id="btnBookSearch" layoutX="138.0" layoutY="657.0" mnemonicParsing="false" onAction="#btnBookSearchAction" text="Search" />
                   <Line endX="26.5" endY="458.25" layoutX="200.0" layoutY="236.0" startX="26.5" startY="-235.0" />
                   <Line endX="61.0" endY="1.0" layoutX="165.0" layoutY="693.0" startX="-166.0" />
                   <Label layoutX="31.0" layoutY="29.0" text="Search">

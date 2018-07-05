@@ -1,11 +1,13 @@
 package JavaFXGui;
 
+import SqlQuery.AuthorSearch;
+import SqlQuery.BookSearch;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 /**
@@ -17,10 +19,10 @@ import java.util.ResourceBundle;
 
 public class HomeController implements Initializable {
     /**
-     * Control for Home interface.  Allows system Search,
+     * Control for Home interface.  Allows system BookSearch,
      * Data Add, Update, Delete and System Settings
      */
-    //Book Search TextFields
+    //Book BookSearch TextFields
     @FXML
     private TextField txtBookIdSearch;
     @FXML
@@ -106,15 +108,61 @@ public class HomeController implements Initializable {
     @FXML
     private TextField txtPublisherCountyResult;
 
-    //Button Controls
-
-
-
-
-    private void btnSearchAction(ActionEvent event) throws Exception {
+    //Buttons
+    @FXML
+    private void btnBookSearchAction(ActionEvent event) throws Exception {
 
         event.consume();
+        String bookId = txtBookIdSearch.getText();
+        String bookTitle = txtBookTitleSearch.getText();
+        String bookDescription = txtBookDescriptionSearch.getText();
+        String bookPubDate = txtBookPubDateSearch.getText();
+        String bookEdition = txtBookEditionSearch.getText();
+
+        ArrayList<String[]> searchBookResult = new ArrayList<>(BookSearch.Query(bookId, bookTitle,
+                                                    bookDescription, bookPubDate, bookEdition));
+
+        txtBookIdResult.setText(searchBookResult.get(0)[0]);
+        txtBookTitleResult.setText(searchBookResult.get(0)[1]);
+        txtBookDescriptionResult.setText(searchBookResult.get(0)[2]);
+        txtBookGenreIdResult.setText(searchBookResult.get(0)[3]);
+        txtBookPriceResult.setText(searchBookResult.get(0)[4]);
+        txtBookAuthorIdResult.setText(searchBookResult.get(0)[5]);
+        txtBookPublisherIdResult.setText(searchBookResult.get(0)[6]);
+        txtBookPubDateResult.setText(searchBookResult.get(0)[7]);
+        txtBookEditionResult.setText(searchBookResult.get(0)[8]);
+        txtBookQtyResult.setText(searchBookResult.get(0)[6]);
+
+        // Output result
+        for(String[] row: searchBookResult) {
+            for (String s : row) {
+                System.out.print(" " + s);
+
+            }
+            System.out.println();
+        }
     }
+    @FXML
+    private void btnAuthorSearchAction(ActionEvent event) throws Exception {
+
+        event.consume();
+        String authorId = txtAuthorIDSearch.getText();
+        String authorFName = txtAuthorFNameSearch.getText();
+        String authorLName = txtAuthorLNameSearch.getText();
+
+        ArrayList<String[]> searchResult = new ArrayList<>(AuthorSearch.Query(authorId, authorFName, authorLName));
+
+        // print result
+        for( String[] row: searchResult ) {
+            for (String s : row) {
+                System.out.print(" " + s);
+
+            }
+            System.out.println();
+        }
+
+    }
+
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {

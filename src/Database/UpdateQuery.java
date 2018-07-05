@@ -7,7 +7,7 @@ import java.sql.*;
  * This class manages database updates.
  * @author russellfincham
  * @version 0.2
- * @since 04-07-18
+ * @since 05-07-18
  */
 
 public class UpdateQuery {
@@ -23,14 +23,11 @@ public class UpdateQuery {
      */
     public static String queryDatabase(String sqlQuery) throws FileNotFoundException {
 
-        String loginString = DbCredentials.DbUser();
-        String data[] = loginString.split(",");
-        String userName = data[0];
-        String password = data[1];
-        String dbUrl = data[2];
+        String loginString[] = DbCredentials.DbUser();
 
+        //loginString[0] = userName, loginString[1] = password, loginString[2] = DbUrl
         try (
-                Connection conn = DriverManager.getConnection(dbUrl, userName, password);
+                Connection conn = DriverManager.getConnection(loginString[2], loginString[0], loginString[1]);
                 Statement stmt = conn.createStatement();
         ) {
 
