@@ -1,6 +1,7 @@
 package JavaFXGui;
 
 import SqlQuery.BookSearch;
+import SqlQuery.BookUpdate;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -162,6 +163,90 @@ public class HomeController implements Initializable {
         txtPublisherAddress3Result.setText(searchBookResult.get(0)[16]);
         txtPublisherTownResult.setText(searchBookResult.get(0)[17]);
         txtPublisherCountyResult.setText(searchBookResult.get(0)[18]);
+    }
+
+    @FXML
+    private void btnAddBookAction(ActionEvent event) throws Exception {
+
+        event.consume();
+        String bookId = txtBookIdResult.getText();
+        String bookTitle = txtBookTitleResult.getText();
+        String bookDescription = txtBookDescriptionResult.getText();
+        String bookGenreId = txtBookGenreIdResult.getText();
+        String bookPrice = txtBookPriceResult.getText();
+        String bookAuthorId = txtBookAuthorIdResult.getText();
+        String bookPublisherId = txtBookPublisherIdResult.getText();
+        String bookPubDate = txtBookPubDateResult.getText();
+        String bookEdition = txtBookEditionResult.getText();
+        String bookQty = txtBookQtyResult.getText();
+        String authorId = txtAuthorIDResult.getText();
+        String authorFName = txtAuthorFNameResult.getText();
+        String authorLName = txtAuthorLNameResult.getText();
+        String genreId = txtGenreIDResult.getText();
+        String genreName = txtGenreNameResult.getText();
+        String publisherId = txtPublisherIdResult.getText();
+        String publisherName = txtPublisherNameResult.getText();
+        String publisherPostcode = txtPublisherPostcodeResult.getText();
+        String publisherAddress1 = txtPublisherAddress1Result.getText();
+        String publisherAddress2 = txtPublisherAddress2Result.getText();
+        String publisherAddress3 = txtPublisherAddress3Result.getText();
+        String publisherTown = txtPublisherTownResult.getText();
+        String publisherCounty = txtPublisherCountyResult.getText();
+
+        ArrayList<String[]> searchBookResult = new ArrayList<>(BookUpdate.Query(bookId, bookTitle,
+                bookDescription, bookGenreId, bookPrice, bookAuthorId, bookPublisherId, bookQty,
+                bookPubDate, bookEdition, authorId, authorFName, authorLName, genreId, genreName,
+                publisherId, publisherName, publisherPostcode, publisherAddress1, publisherAddress2,
+                publisherAddress3, publisherTown, publisherCounty));
+
+        // Output result
+        for(String[] row: searchBookResult) {
+            for (String s : row) {
+                System.out.print(" " + s);
+            }
+            System.out.println();
+        }
+
+        txtBookIdResult.setText(searchBookResult.get(0)[2]);
+        txtBookTitleResult.setText(searchBookResult.get(0)[3]);
+        txtBookDescriptionResult.setText(searchBookResult.get(0)[4]);
+        txtBookGenreIdResult.setText(searchBookResult.get(0)[5]);
+        txtBookPriceResult.setText(searchBookResult.get(0)[6]);
+        txtBookAuthorIdResult.setText(searchBookResult.get(0)[7]);
+        txtBookPublisherIdResult.setText(searchBookResult.get(0)[8]);
+        txtBookPubDateResult.setText(searchBookResult.get(0)[9]);
+        txtBookEditionResult.setText(searchBookResult.get(0)[10]);
+        txtBookQtyResult.setText(searchBookResult.get(0)[11]);
+        txtAuthorIDResult.setText(searchBookResult.get(0)[7]);
+        txtAuthorFNameResult.setText(searchBookResult.get(0)[0]);
+        txtAuthorLNameResult.setText(searchBookResult.get(0)[1]);
+        txtGenreIDResult.setText(searchBookResult.get(0)[5]);
+        txtGenreNameResult.setText(searchBookResult.get(0)[12]);
+        txtPublisherIdResult.setText(searchBookResult.get(0)[8]);
+        txtPublisherNameResult.setText(searchBookResult.get(0)[13]);
+        txtPublisherPostcodeResult.setText(searchBookResult.get(0)[19]);
+        txtPublisherAddress1Result.setText(searchBookResult.get(0)[14]);
+        txtPublisherAddress2Result.setText(searchBookResult.get(0)[15]);
+        txtPublisherAddress3Result.setText(searchBookResult.get(0)[16]);
+        txtPublisherTownResult.setText(searchBookResult.get(0)[17]);
+        txtPublisherCountyResult.setText(searchBookResult.get(0)[18]);
+
+    }
+
+    @FXML
+    private void btnUpdateBookAction(ActionEvent event) throws Exception {
+
+
+    }
+
+    @FXML
+    private void btnDeleteBookAction(ActionEvent event) throws Exception {
+
+
+    }
+
+    @FXML
+    private void btnSettingsAction(ActionEvent event) throws Exception {
 
 
     }

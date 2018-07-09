@@ -89,10 +89,10 @@
                </children></Pane>
             <ButtonBar GridPane.columnIndex="1" GridPane.rowIndex="1">
               <buttons>
-                  <Button mnemonicParsing="false" text="Add" />
-                  <Button mnemonicParsing="false" text="Update" />
-                  <Button mnemonicParsing="false" text="Delete" />
-                <Button mnemonicParsing="false" text="Settings" />
+                  <Button mnemonicParsing="false" onAction="#btnAddBookAction" text="Add" />
+                  <Button mnemonicParsing="false" onAction="#btnUpdateBookAction" text="Update" />
+                  <Button mnemonicParsing="false" onAction="#btnDeleteBookAction" text="Delete" />
+                <Button mnemonicParsing="false" onAction="#btnSettingsAction" text="Settings" />
               </buttons>
                <padding>
                   <Insets right="50.0" />
