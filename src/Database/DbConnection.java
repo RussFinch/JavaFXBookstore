@@ -39,13 +39,22 @@ public class DbConnection {
             ResultSet rset = stmt.executeQuery(sqlQuery);
             int nCol = rset.getMetaData().getColumnCount();
 
-            while (rset.next()) {
+            if (!rset.next()) {
                 String[] row = new String[nCol];
-                for (int iCol=1; iCol<=nCol; iCol++) {
-                    Object obj = rset.getObject(iCol);
-                    row[iCol-1] = (obj == null) ?null:obj.toString();
+                for (int iCol = 1; iCol <= nCol; iCol++) {
+                    row[iCol - 1] = "No Result";
                 }
                 resultTable.add(row);
+            }
+            else{
+                while (rset.next()) {
+                    String[] row = new String[nCol];
+                    for (int iCol = 1; iCol <= nCol; iCol++) {
+                        Object obj = rset.getObject(iCol);
+                        row[iCol - 1] = (obj == null) ? null : obj.toString();
+                    }
+                    resultTable.add(row);
+                }
             }
 
         } catch (SQLException ex) {
