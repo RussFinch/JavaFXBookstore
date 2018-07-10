@@ -41,21 +41,17 @@
                   </Label>
                   <Group layoutX="31.0" layoutY="58.0">
                      <children>
-                        <Group>
-                           <children>
-                              <Label prefHeight="17.0" prefWidth="85.0" text="Book">
-                                 <font>
-                                    <Font size="18.0" />
-                                 </font>
-                              </Label>
-                              <TextField fx:id="txtBookIdSearch" layoutX="2.0" layoutY="23.0" promptText="Book ID" />
-                              <TextField fx:id="txtBookTitleSearch" layoutX="2.0" layoutY="62.0" promptText="Title" />
-                              <TextField fx:id="txtBookDescriptionSearch" layoutX="2.0" layoutY="100.0" promptText="Description (Keyword)" />
-                              <DatePicker fx:id="txtBookStartPubDateSearch" layoutX="2.0" layoutY="140.0" prefHeight="27.0" prefWidth="168.0" promptText="Start Publish Date" />
-                           </children>
-                        </Group>
-                        <TextField fx:id="txtBookEditionSearch" layoutX="3.0" layoutY="215.0" prefHeight="27.0" prefWidth="167.0" promptText="Edition" />
+                        <Label prefHeight="17.0" prefWidth="85.0" text="Book">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtBookIdSearch" layoutX="2.0" layoutY="23.0" promptText="Book ID" />
+                        <TextField fx:id="txtBookTitleSearch" layoutX="2.0" layoutY="62.0" promptText="Title" />
+                        <TextField fx:id="txtBookDescriptionSearch" layoutX="2.0" layoutY="100.0" promptText="Description (Keyword)" />
+                        <DatePicker fx:id="txtBookStartPubDateSearch" layoutX="2.0" layoutY="140.0" prefHeight="27.0" prefWidth="168.0" promptText="Start Publish Date" />
                         <DatePicker fx:id="txtBookEndPubDateSearch" layoutX="3.0" layoutY="179.0" prefHeight="27.0" prefWidth="167.0" promptText="End Publish Date" />
+                        <TextField fx:id="txtBookEditionSearch" layoutX="3.0" layoutY="215.0" prefHeight="27.0" prefWidth="167.0" promptText="Edition" />
                      </children>
                   </Group>
                   <Group layoutX="32.0" layoutY="303.0">
@@ -112,10 +108,10 @@
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Button layoutX="506.0" layoutY="31.0" mnemonicParsing="false" text="First" />
-                  <Button layoutX="572.0" layoutY="31.0" mnemonicParsing="false" text="Prev" />
-                  <Button layoutX="637.0" layoutY="31.0" mnemonicParsing="false" text="Next" />
-                  <Button layoutX="702.0" layoutY="31.0" mnemonicParsing="false" text="Last" />
+                  <Button layoutX="506.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnBookFirstAction" text="First" />
+                  <Button layoutX="572.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnBookPrevAction" text="Prev" />
+                  <Button layoutX="637.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnBookNextAction" text="Next" />
+                  <Button layoutX="702.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnBookLastAction" text="Last" />
                   <Group layoutX="35.0" layoutY="80.0">
                      <children>
                         <Label prefHeight="17.0" prefWidth="85.0" text="Book">
@@ -143,6 +139,7 @@
                         <TextField fx:id="txtBookGenreIdResult" editable="false" layoutX="399.0" layoutY="190.0" />
                         <Label layoutX="595.0" layoutY="173.0" text="Qty" />
                         <TextField fx:id="txtBookQtyResult" editable="false" layoutX="595.0" layoutY="190.0" prefHeight="27.0" prefWidth="115.0" />
+                        <Label fx:id="lblSearchResultCounter" layoutX="595.0" layoutY="-8.0" text="0 of 0 records" />
                      </children>
                   </Group>
                   <Group layoutX="35.0" layoutY="318.0">

@@ -39,13 +39,20 @@ public class DbConnection {
             ResultSet rset = stmt.executeQuery(sqlQuery);
             int nCol = rset.getMetaData().getColumnCount();
 
-
-
             while (rset.next()) {
                 String[] row = new String[nCol];
                 for (int iCol = 1; iCol <= nCol; iCol++) {
                     Object obj = rset.getObject(iCol);
                     row[iCol - 1] = (obj == null) ? null : obj.toString();
+                }
+                resultTable.add(row);
+            }
+
+            //If results null build row 0 of list array to specify so.
+            if (!rset.next()) {
+                String[] row = new String[nCol];
+                for (int iCol = 1; iCol <= nCol; iCol++) {
+                    row[iCol - 1] = "No Further Results";
                 }
                 resultTable.add(row);
             }
