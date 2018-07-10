@@ -5,9 +5,11 @@ import SqlQuery.BookUpdate;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
@@ -31,7 +33,9 @@ public class HomeController implements Initializable {
     @FXML
     private TextField txtBookDescriptionSearch;
     @FXML
-    private TextField txtBookPubDateSearch;
+    private DatePicker txtBookStartPubDateSearch;
+    @FXML
+    private DatePicker txtBookEndPubDateSearch;
     @FXML
     private TextField txtBookEditionSearch;
 
@@ -114,10 +118,19 @@ public class HomeController implements Initializable {
     private void btnBookSearchAction(ActionEvent event) throws Exception {
 
         event.consume();
+
+        //convert DatePicker values to strings.
+        LocalDate startDate = txtBookStartPubDateSearch.getValue();
+        LocalDate endDate = txtBookEndPubDateSearch.getValue();
+        String startPublishDate = startDate.toString();
+        String endPublishDate = endDate.toString();
+
+        //Retrieve data.
         String bookId = txtBookIdSearch.getText();
         String bookTitle = txtBookTitleSearch.getText();
         String bookDescription = txtBookDescriptionSearch.getText();
-        String bookPubDate = txtBookPubDateSearch.getText();
+        String bookStartPubDate = startPublishDate;
+        String bookEndPubDate = endPublishDate;
         String bookEdition = txtBookEditionSearch.getText();
         String authorId = txtAuthorIDSearch.getText();
         String authorFName = txtAuthorFNameSearch.getText();
@@ -127,19 +140,13 @@ public class HomeController implements Initializable {
         String publisherId = txtPublisherIDSearch.getText();
         String publisherName = txtPublisherNameSearch.getText();
 
+        //Initiate results collection from database.
         ArrayList<String[]> searchBookResult = new ArrayList<>(BookSearch.Query(bookId, bookTitle,
-                                                bookDescription, bookPubDate, bookEdition, authorId,
-                                                authorFName, authorLName, genreId, genreName,
-                                                publisherId, publisherName));
+                                                bookDescription, bookStartPubDate, bookEndPubDate,
+                                                bookEdition, authorId, authorFName, authorLName,
+                                                genreId, genreName, publisherId, publisherName));
 
-        // Output result
-        for(String[] row: searchBookResult) {
-            for (String s : row) {
-                System.out.print(" " + s);
-            }
-            System.out.println();
-        }
-
+        //output results to interface
         txtBookIdResult.setText(searchBookResult.get(0)[2]);
         txtBookTitleResult.setText(searchBookResult.get(0)[3]);
         txtBookDescriptionResult.setText(searchBookResult.get(0)[4]);

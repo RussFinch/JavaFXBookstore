@@ -24,7 +24,8 @@ public class BookSearch {
      * @param bookId
      * @param bookTitle
      * @param bookDescription
-     * @param bookPubDate
+     * @param bookStartPubDate
+     * @param bookEndPubDate
      * @param bookEdition
      * @param authorFName
      * @param authorLName
@@ -35,15 +36,17 @@ public class BookSearch {
      * @return List Array of results returned to search book button action control.
      */
     public static List<String[]> Query(String bookId, String bookTitle, String bookDescription,
-                                       String bookPubDate, String bookEdition, String authorId,
+                                       String bookStartPubDate, String bookEndPubDate,
+                                       String bookEdition, String authorId,
                                        String authorFName, String authorLName, String genreId,
                                        String genreName, String publisherId, String publisherName)
             throws FileNotFoundException {
 
-        String sqlQuery = "SELECT * FROM completeview WHERE id LIKE '%" + bookId + "%' "
+        String sqlQuery = "SELECT * FROM ebookstore.completeview WHERE id LIKE '%" + bookId + "%' "
                 + "AND title LIKE '%" + bookTitle + "%' "
                 + "AND description LIKE '%" + bookDescription + "%' "
-                + "AND publish_date LIKE '%" + bookPubDate + "%' "
+                + "AND publish_date BETWEEN '" + bookStartPubDate + "' AND '"
+                + bookEndPubDate + "' "
                 + "AND edition LIKE '%" + bookEdition + "%' "
                 + "AND author_id LIKE '%" + authorId + "%' "
                 + "AND author_firstname LIKE '%" + authorFName + "%' "

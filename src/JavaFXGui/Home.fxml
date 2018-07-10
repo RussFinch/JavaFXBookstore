@@ -4,6 +4,7 @@
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
@@ -38,21 +39,26 @@
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Group layoutX="31.0" layoutY="75.0">
+                  <Group layoutX="31.0" layoutY="58.0">
                      <children>
-                        <Label prefHeight="17.0" prefWidth="85.0" text="Book">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="txtBookIdSearch" layoutX="2.0" layoutY="23.0" promptText="Book ID" />
-                        <TextField fx:id="txtBookTitleSearch" layoutX="2.0" layoutY="62.0" promptText="Title" />
-                        <TextField fx:id="txtBookDescriptionSearch" layoutX="2.0" layoutY="100.0" promptText="Description (Keyword)" />
-                        <TextField fx:id="txtBookPubDateSearch" layoutX="2.0" layoutY="139.0" promptText="Publish Date" />
-                        <TextField fx:id="txtBookEditionSearch" layoutX="2.0" layoutY="177.0" promptText="Edition" />
+                        <Group>
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="85.0" text="Book">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtBookIdSearch" layoutX="2.0" layoutY="23.0" promptText="Book ID" />
+                              <TextField fx:id="txtBookTitleSearch" layoutX="2.0" layoutY="62.0" promptText="Title" />
+                              <TextField fx:id="txtBookDescriptionSearch" layoutX="2.0" layoutY="100.0" promptText="Description (Keyword)" />
+                              <DatePicker fx:id="txtBookStartPubDateSearch" layoutX="2.0" layoutY="140.0" prefHeight="27.0" prefWidth="168.0" promptText="Start Publish Date" />
+                           </children>
+                        </Group>
+                        <TextField fx:id="txtBookEditionSearch" layoutX="3.0" layoutY="215.0" prefHeight="27.0" prefWidth="167.0" promptText="Edition" />
+                        <DatePicker fx:id="txtBookEndPubDateSearch" layoutX="3.0" layoutY="179.0" prefHeight="27.0" prefWidth="167.0" promptText="End Publish Date" />
                      </children>
                   </Group>
-                  <Group layoutX="32.0" layoutY="288.0">
+                  <Group layoutX="32.0" layoutY="303.0">
                      <children>
                         <Label layoutY="14.0" text="Author">
                            <font>
@@ -64,7 +70,7 @@
                         <TextField fx:id="txtAuthorLNameSearch" layoutY="113.0" promptText="Last Name" />
                      </children>
                   </Group>
-                  <Group layoutX="32.0" layoutY="447.0">
+                  <Group layoutX="32.0" layoutY="460.0">
                      <children>
                         <Label text="Genre">
                            <font>
@@ -75,7 +81,7 @@
                         <TextField fx:id="txtGenreNameSearch" layoutY="58.0" promptText="Genre Name" />
                      </children>
                   </Group>
-                  <Group layoutX="32.0" layoutY="535.0">
+                  <Group layoutX="32.0" layoutY="546.0">
                      <children>
                         <Label layoutY="17.0" text="Publisher">
                            <font>
@@ -118,25 +124,25 @@
                            </font>
                         </Label>
                         <Label layoutX="3.0" layoutY="29.0" text="Title" />
-                        <TextField fx:id="txtBookTitleResult" layoutX="3.0" layoutY="45.0" />
+                        <TextField fx:id="txtBookTitleResult" editable="false" layoutX="3.0" layoutY="45.0" />
                         <Label layoutX="3.0" layoutY="75.0" text="Edition" />
-                        <TextField fx:id="txtBookEditionResult" layoutX="3.0" layoutY="92.0" />
+                        <TextField fx:id="txtBookEditionResult" editable="false" layoutX="3.0" layoutY="92.0" />
                         <Label layoutX="3.0" layoutY="125.0" text="Published Date" />
-                        <TextField fx:id="txtBookPubDateResult" layoutX="3.0" layoutY="141.0" />
+                        <TextField fx:id="txtBookPubDateResult" editable="false" layoutX="3.0" layoutY="141.0" />
                         <Label layoutX="3.0" layoutY="171.0" text="Price" />
-                        <TextField fx:id="txtBookPriceResult" layoutX="3.0" layoutY="188.0" />
+                        <TextField fx:id="txtBookPriceResult" editable="false" layoutX="3.0" layoutY="188.0" />
                         <Label layoutX="201.0" layoutY="29.0" text="Description" />
-                        <TextArea fx:id="txtBookDescriptionResult" layoutX="201.0" layoutY="44.0" prefHeight="75.0" prefWidth="509.0" wrapText="true" />
+                        <TextArea fx:id="txtBookDescriptionResult" editable="false" layoutX="201.0" layoutY="44.0" prefHeight="75.0" prefWidth="509.0" wrapText="true" />
                         <Label layoutX="201.0" layoutY="126.0" text="Publisher ID" />
-                        <TextField fx:id="txtBookPublisherIdResult" layoutX="201.0" layoutY="142.0" />
+                        <TextField fx:id="txtBookPublisherIdResult" editable="false" layoutX="201.0" layoutY="142.0" />
                         <Label layoutX="201.0" layoutY="172.0" text="Book ID" />
-                        <TextField fx:id="txtBookIdResult" layoutX="201.0" layoutY="189.0" />
+                        <TextField fx:id="txtBookIdResult" editable="false" layoutX="201.0" layoutY="189.0" />
                         <Label layoutX="399.0" layoutY="127.0" text="Author ID" />
-                        <TextField fx:id="txtBookAuthorIdResult" layoutX="399.0" layoutY="143.0" />
+                        <TextField fx:id="txtBookAuthorIdResult" editable="false" layoutX="399.0" layoutY="143.0" />
                         <Label layoutX="399.0" layoutY="173.0" text="Genre ID" />
-                        <TextField fx:id="txtBookGenreIdResult" layoutX="399.0" layoutY="190.0" />
+                        <TextField fx:id="txtBookGenreIdResult" editable="false" layoutX="399.0" layoutY="190.0" />
                         <Label layoutX="595.0" layoutY="173.0" text="Qty" />
-                        <TextField fx:id="txtBookQtyResult" layoutX="595.0" layoutY="190.0" prefHeight="27.0" prefWidth="115.0" />
+                        <TextField fx:id="txtBookQtyResult" editable="false" layoutX="595.0" layoutY="190.0" prefHeight="27.0" prefWidth="115.0" />
                      </children>
                   </Group>
                   <Group layoutX="35.0" layoutY="318.0">
@@ -147,11 +153,11 @@
                            </font>
                         </Label>
                         <Label layoutX="2.0" layoutY="28.0" text="First Name" />
-                        <TextField fx:id="txtAuthorFNameResult" layoutX="2.0" layoutY="44.0" />
+                        <TextField fx:id="txtAuthorFNameResult" editable="false" layoutX="2.0" layoutY="44.0" />
                         <Label layoutX="200.0" layoutY="29.0" text="Last Name" />
-                        <TextField fx:id="txtAuthorLNameResult" layoutX="200.0" layoutY="45.0" />
+                        <TextField fx:id="txtAuthorLNameResult" editable="false" layoutX="200.0" layoutY="45.0" />
                         <Label layoutX="398.0" layoutY="30.0" text="Author ID" />
-                        <TextField fx:id="txtAuthorIDResult" layoutX="398.0" layoutY="46.0" />
+                        <TextField fx:id="txtAuthorIDResult" editable="false" layoutX="398.0" layoutY="46.0" />
                      </children>
                   </Group>
                   <Group layoutX="36.0" layoutY="412.0">
@@ -162,9 +168,9 @@
                            </font>
                         </Label>
                         <Label layoutX="2.0" layoutY="28.0" text="Genre Name" />
-                        <TextField fx:id="txtGenreNameResult" layoutX="2.0" layoutY="44.0" />
+                        <TextField fx:id="txtGenreNameResult" editable="false" layoutX="2.0" layoutY="44.0" />
                         <Label layoutX="200.0" layoutY="29.0" text="Genre ID" />
-                        <TextField fx:id="txtGenreIDResult" layoutX="200.0" layoutY="45.0" />
+                        <TextField fx:id="txtGenreIDResult" editable="false" layoutX="200.0" layoutY="45.0" />
                      </children>
                   </Group>
                   <Group layoutX="36.0" layoutY="501.0">
@@ -175,21 +181,21 @@
                            </font>
                         </Label>
                         <Label layoutX="2.0" layoutY="30.0" text="Publisher Name" />
-                        <TextField fx:id="txtPublisherNameResult" layoutX="2.0" layoutY="46.0" prefHeight="27.0" prefWidth="245.0" />
+                        <TextField fx:id="txtPublisherNameResult" editable="false" layoutX="2.0" layoutY="46.0" prefHeight="27.0" prefWidth="245.0" />
                         <Label layoutX="2.0" layoutY="76.0" text="Address 1" />
-                        <TextField fx:id="txtPublisherAddress1Result" layoutX="2.0" layoutY="93.0" prefHeight="27.0" prefWidth="213.0" />
+                        <TextField fx:id="txtPublisherAddress1Result" editable="false" layoutX="2.0" layoutY="93.0" prefHeight="27.0" prefWidth="213.0" />
                         <Label layoutX="2.0" layoutY="126.0" text="Town" />
-                        <TextField fx:id="txtPublisherTownResult" layoutX="2.0" layoutY="142.0" />
+                        <TextField fx:id="txtPublisherTownResult" editable="false" layoutX="2.0" layoutY="142.0" />
                         <Label layoutX="269.0" layoutY="30.0" text="Publisher ID" />
-                        <TextField fx:id="txtPublisherIdResult" layoutX="269.0" layoutY="46.0" prefHeight="27.0" prefWidth="176.0" />
+                        <TextField fx:id="txtPublisherIdResult" editable="false" layoutX="269.0" layoutY="46.0" prefHeight="27.0" prefWidth="176.0" />
                         <Label layoutX="242.0" layoutY="76.0" text="Address 2" />
-                        <TextField fx:id="txtPublisherAddress2Result" layoutX="241.0" layoutY="93.0" prefHeight="27.0" prefWidth="213.0" />
+                        <TextField fx:id="txtPublisherAddress2Result" editable="false" layoutX="241.0" layoutY="93.0" prefHeight="27.0" prefWidth="213.0" />
                         <Label layoutX="200.0" layoutY="127.0" text="County" />
-                        <TextField fx:id="txtPublisherCountyResult" layoutX="200.0" layoutY="143.0" />
+                        <TextField fx:id="txtPublisherCountyResult" editable="false" layoutX="200.0" layoutY="143.0" />
                         <Label layoutX="467.0" layoutY="31.0" text="Postcode" />
-                        <TextField fx:id="txtPublisherPostcodeResult" layoutX="467.0" layoutY="47.0" prefHeight="27.0" prefWidth="115.0" />
+                        <TextField fx:id="txtPublisherPostcodeResult" editable="false" layoutX="467.0" layoutY="47.0" prefHeight="27.0" prefWidth="115.0" />
                         <Label layoutX="477.0" layoutY="76.0" text="Address 3" />
-                        <TextField fx:id="txtPublisherAddress3Result" layoutX="477.0" layoutY="93.0" prefHeight="27.0" prefWidth="213.0" />
+                        <TextField fx:id="txtPublisherAddress3Result" editable="false" layoutX="477.0" layoutY="93.0" prefHeight="27.0" prefWidth="213.0" />
                      </children>
                   </Group>
                </children>
