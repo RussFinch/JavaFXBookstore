@@ -17,15 +17,13 @@ import java.util.ResourceBundle;
 /**
  * controller class for Home.fxml.
  * @author russellfincham
- * @version 0.1
- * @since 04-07-18
+ * @version 0.2
+ * @since 10-07-18
  */
 
 public class HomeController implements Initializable {
-
-
     /**
-     * Control for Home interface.  Allows system BookSearch,
+     * Control for Home interface.  Allows for Book Search,
      * Data Add, Update, Delete and System Settings
      */
 
@@ -136,6 +134,7 @@ public class HomeController implements Initializable {
         LocalDate startDate = txtBookStartPubDateSearch.getValue();
         LocalDate endDate = txtBookEndPubDateSearch.getValue();
 
+        //If no date enter default values set as below.
         if (startDate == null) {
             startDate = LocalDate.of(0000, 01, 01);
         }
@@ -158,23 +157,20 @@ public class HomeController implements Initializable {
         String publisherId = txtPublisherIDSearch.getText();
         String publisherName = txtPublisherNameSearch.getText();
 
-
-
-
         //Initiate results collection from database.
         searchBookResult = new ArrayList<>(BookSearch.Query(bookId, bookTitle,
                 bookDescription, bookStartPubDate, bookEndPubDate,
                 bookEdition, authorId, authorFName, authorLName,
                 genreId, genreName, publisherId, publisherName));
 
-        // Output result
+/*        // Output result for testing
         for (String[] row: searchBookResult) {
             for (String s : row) {
                 System.out.print(" " + s);
             }
             System.out.println();
         }
-
+*/
         SearchDisplayResult(listNum, searchBookResult);
     }
 
@@ -280,6 +276,9 @@ public class HomeController implements Initializable {
         String publisherTown = txtPublisherTownResult.getText();
         String publisherCounty = txtPublisherCountyResult.getText();
 
+        //Validate input data
+
+
         ArrayList<String[]> searchBookResult = new ArrayList<>(BookUpdate.Query(bookId, bookTitle,
                 bookDescription, bookGenreId, bookPrice, bookAuthorId, bookPublisherId, bookQty,
                 bookPubDate, bookEdition, authorId, authorFName, authorLName, genreId, genreName,
@@ -337,7 +336,11 @@ public class HomeController implements Initializable {
 
 
     }
-
+    /**
+     * Initializes the controller class.
+     * @param url
+     * @param rb
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 

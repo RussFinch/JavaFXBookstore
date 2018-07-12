@@ -9,8 +9,8 @@ import java.util.List;
  * This class manages connections to the Database.
  * It
  * @author russellfincham
- * @version 0.1
- * @since 05-07-18
+ * @version 0.2
+ * @since 10-07-18
  */
 
 public class DbConnection {

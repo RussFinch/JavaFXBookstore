@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="290.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXGui.AddBookController">
+   <children>
+      <Pane layoutX="138.0" layoutY="67.0" prefHeight="265.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Group layoutX="8.0" layoutY="8.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="85.0" text="Add Book">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="3.0" layoutY="29.0" text="Title" />
+                  <TextField fx:id="txtBookTitleAdd" layoutX="3.0" layoutY="45.0" promptText="Add Book Title" />
+                  <Label layoutX="3.0" layoutY="75.0" text="Edition" />
+                  <TextField fx:id="txtBookEditionAdd" layoutX="3.0" layoutY="92.0" promptText="Add Book Edition" />
+                  <Label layoutX="3.0" layoutY="125.0" text="Published Date" />
+                  <Label layoutX="3.0" layoutY="171.0" text="Price" />
+                  <TextField fx:id="txtBookPriceAdd" layoutX="3.0" layoutY="188.0" promptText="Add Book Price" />
+                  <Label layoutX="201.0" layoutY="29.0" text="Description" />
+                  <TextArea fx:id="txtBookDescriptionAdd" layoutX="201.0" layoutY="44.0" prefHeight="75.0" prefWidth="509.0" promptText="Add Book Description" wrapText="true" />
+                  <Label layoutX="201.0" layoutY="126.0" text="Publisher ID" />
+                  <Label layoutX="201.0" layoutY="172.0" text="Book ID" />
+                  <TextField fx:id="txtBookIdResult" layoutX="201.0" layoutY="189.0" />
+                  <Label layoutX="399.0" layoutY="127.0" text="Author ID" />
+                  <Label layoutX="399.0" layoutY="173.0" text="Genre ID" />
+                  <Label layoutX="595.0" layoutY="173.0" text="Qty" />
+                  <TextField fx:id="txtBookQtyResult" layoutX="595.0" layoutY="190.0" prefHeight="27.0" prefWidth="115.0" />
+                  <DatePicker fx:id="txtBookPubDateAdd" layoutX="1.0" layoutY="142.0" prefHeight="27.0" prefWidth="170.0" promptText="Add Published Date" />
+                  <ChoiceBox layoutX="200.0" layoutY="143.0" prefHeight="27.0" prefWidth="168.0" />
+                  <ChoiceBox layoutX="399.0" layoutY="143.0" prefHeight="27.0" prefWidth="168.0" />
+                  <ChoiceBox layoutX="399.0" layoutY="188.0" prefHeight="27.0" prefWidth="168.0" />
+               </children>
+            </Group>
+            <Button layoutX="547.0" layoutY="249.0" mnemonicParsing="false" text="Add" />
+            <Button layoutX="638.0" layoutY="249.0" mnemonicParsing="false" text="Cancel" />
+            <Label layoutX="55.0" layoutY="241.0" prefHeight="27.0" prefWidth="444.0" text="Output issues here!" textFill="RED" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

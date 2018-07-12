@@ -6,6 +6,8 @@
 <?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -91,10 +93,38 @@
                </children></Pane>
             <ButtonBar GridPane.columnIndex="1" GridPane.rowIndex="1">
               <buttons>
-                  <Button mnemonicParsing="false" onAction="#btnAddBookAction" text="Add" />
-                  <Button mnemonicParsing="false" onAction="#btnUpdateBookAction" text="Update" />
-                  <Button mnemonicParsing="false" onAction="#btnDeleteBookAction" text="Delete" />
-                <Button mnemonicParsing="false" onAction="#btnSettingsAction" text="Settings" />
+                  <MenuButton mnemonicParsing="false" popupSide="TOP" text="Add">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Book" />
+                      <MenuItem mnemonicParsing="false" text="Author" />
+                        <MenuItem mnemonicParsing="false" text="Genre" />
+                        <MenuItem mnemonicParsing="false" text="Publisher" />
+                    </items>
+                  </MenuButton>
+                  <MenuButton mnemonicParsing="false" popupSide="TOP" text="Update">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Book" />
+                      <MenuItem mnemonicParsing="false" text="Author" />
+                        <MenuItem mnemonicParsing="false" text="Genre" />
+                        <MenuItem mnemonicParsing="false" text="Publisher" />
+                    </items>
+                  </MenuButton>
+                  <MenuButton mnemonicParsing="false" popupSide="TOP" text="Delete">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Book" />
+                      <MenuItem mnemonicParsing="false" text="Author" />
+                        <MenuItem mnemonicParsing="false" text="Genre" />
+                        <MenuItem mnemonicParsing="false" text="Publisher" />
+                    </items>
+                  </MenuButton>
+                  <MenuButton mnemonicParsing="false" popupSide="TOP" text="Settings">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="DB Access" />
+                      <MenuItem mnemonicParsing="false" text="DB Schema" />
+                        <MenuItem mnemonicParsing="false" text="Upload Data" />
+                        <MenuItem mnemonicParsing="false" text="Users" />
+                    </items>
+                  </MenuButton>
               </buttons>
                <padding>
                   <Insets right="50.0" />
