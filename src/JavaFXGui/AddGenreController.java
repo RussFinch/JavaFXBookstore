@@ -1,12 +1,13 @@
 package JavaFXGui;
 
-import Database.UpdateQuery;
 import SqlQuery.AddGenre;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -26,6 +27,9 @@ public class AddGenreController implements Initializable {
     private TextField txtGenreNameAdd;
     @FXML
     private Label lblGenreAddIssues;
+    @FXML
+    private Button btnCancel;
+
 
     //Buttons
     @FXML
@@ -34,8 +38,8 @@ public class AddGenreController implements Initializable {
         String genreName = txtGenreNameAdd.getText();
         String genreID = txtGenreIDAdd.getText();
 
-        if ((genreName.length() == 0) && (genreID.length() == 0)) {
-            lblGenreAddIssues.setText("Both data entries filled");
+        if ((genreName.length() == 0) || (genreID.length() == 0)) {
+            lblGenreAddIssues.setText("Fill both data entries.");
         }
         else if (genreName.length() > 50) {
             lblGenreAddIssues.setText("Genre Name too long..");
@@ -50,10 +54,11 @@ public class AddGenreController implements Initializable {
 
     }
 
-    //Buttons
     @FXML
-    private void btnGenreAddCancelAction(ActionEvent event) throws Exception {
+    private void btnGenreAddCancelAction() throws Exception {
 
+        Stage addGenreStage = (Stage) btnCancel.getScene().getWindow();
+        addGenreStage.close();
     }
 
     /**
