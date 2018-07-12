@@ -4,11 +4,17 @@ import SqlQuery.BookSearch;
 import SqlQuery.BookUpdate;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -249,90 +255,120 @@ public class HomeController implements Initializable {
     }
 
     @FXML
-    private void btnAddBookAction(ActionEvent event) throws Exception {
+    private void btnAddBookAction() throws Exception {
 
-        event.consume();
-        String bookId = txtBookIdResult.getText();
-        String bookTitle = txtBookTitleResult.getText();
-        String bookDescription = txtBookDescriptionResult.getText();
-        String bookGenreId = txtBookGenreIdResult.getText();
-        String bookPrice = txtBookPriceResult.getText();
-        String bookAuthorId = txtBookAuthorIdResult.getText();
-        String bookPublisherId = txtBookPublisherIdResult.getText();
-        String bookPubDate = txtBookPubDateResult.getText();
-        String bookEdition = txtBookEditionResult.getText();
-        String bookQty = txtBookQtyResult.getText();
-        String authorId = txtAuthorIDResult.getText();
-        String authorFName = txtAuthorFNameResult.getText();
-        String authorLName = txtAuthorLNameResult.getText();
-        String genreId = txtGenreIDResult.getText();
-        String genreName = txtGenreNameResult.getText();
-        String publisherId = txtPublisherIdResult.getText();
-        String publisherName = txtPublisherNameResult.getText();
-        String publisherPostcode = txtPublisherPostcodeResult.getText();
-        String publisherAddress1 = txtPublisherAddress1Result.getText();
-        String publisherAddress2 = txtPublisherAddress2Result.getText();
-        String publisherAddress3 = txtPublisherAddress3Result.getText();
-        String publisherTown = txtPublisherTownResult.getText();
-        String publisherCounty = txtPublisherCountyResult.getText();
-
-        //Validate input data
-
-
-        ArrayList<String[]> searchBookResult = new ArrayList<>(BookUpdate.Query(bookId, bookTitle,
-                bookDescription, bookGenreId, bookPrice, bookAuthorId, bookPublisherId, bookQty,
-                bookPubDate, bookEdition, authorId, authorFName, authorLName, genreId, genreName,
-                publisherId, publisherName, publisherPostcode, publisherAddress1, publisherAddress2,
-                publisherAddress3, publisherTown, publisherCounty));
-
-        // Output result
-        for(String[] row: searchBookResult) {
-            for (String s : row) {
-                System.out.print(" " + s);
-            }
-            System.out.println();
-        }
-
-        txtBookIdResult.setText(searchBookResult.get(0)[2]);
-        txtBookTitleResult.setText(searchBookResult.get(0)[3]);
-        txtBookDescriptionResult.setText(searchBookResult.get(0)[4]);
-        txtBookGenreIdResult.setText(searchBookResult.get(0)[5]);
-        txtBookPriceResult.setText(searchBookResult.get(0)[6]);
-        txtBookAuthorIdResult.setText(searchBookResult.get(0)[7]);
-        txtBookPublisherIdResult.setText(searchBookResult.get(0)[8]);
-        txtBookPubDateResult.setText(searchBookResult.get(0)[9]);
-        txtBookEditionResult.setText(searchBookResult.get(0)[10]);
-        txtBookQtyResult.setText(searchBookResult.get(0)[11]);
-        txtAuthorIDResult.setText(searchBookResult.get(0)[7]);
-        txtAuthorFNameResult.setText(searchBookResult.get(0)[0]);
-        txtAuthorLNameResult.setText(searchBookResult.get(0)[1]);
-        txtGenreIDResult.setText(searchBookResult.get(0)[5]);
-        txtGenreNameResult.setText(searchBookResult.get(0)[12]);
-        txtPublisherIdResult.setText(searchBookResult.get(0)[8]);
-        txtPublisherNameResult.setText(searchBookResult.get(0)[13]);
-        txtPublisherPostcodeResult.setText(searchBookResult.get(0)[19]);
-        txtPublisherAddress1Result.setText(searchBookResult.get(0)[14]);
-        txtPublisherAddress2Result.setText(searchBookResult.get(0)[15]);
-        txtPublisherAddress3Result.setText(searchBookResult.get(0)[16]);
-        txtPublisherTownResult.setText(searchBookResult.get(0)[17]);
-        txtPublisherCountyResult.setText(searchBookResult.get(0)[18]);
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/AddBook.fxml"));
+        Stage addBookStage = new Stage();
+        Scene addBookScene = new Scene(parent);
+        addBookStage.setScene(addBookScene);
+        addBookStage.setTitle("JavaFX BookStore..  Add Book");
+        addBookStage.show();
 
     }
 
     @FXML
-    private void btnUpdateBookAction(ActionEvent event) throws Exception {
+    private void btnAddAuthorAction() throws Exception {
+
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/AddAuthor.fxml"));
+        Stage addAuthorStage = new Stage();
+        Scene addAuthorScene = new Scene(parent);
+        addAuthorStage.setScene(addAuthorScene);
+        addAuthorStage.setTitle("JavaFX BookStore..  Add Author");
+        addAuthorStage.show();
+
+    }
+
+    @FXML
+    private void btnAddGenreAction(ActionEvent event) throws Exception {
+
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/AddGenre.fxml"));
+        Stage addGenreStage = new Stage();
+        Scene addGenreScene = new Scene(parent);
+        addGenreStage.setScene(addGenreScene);
+        addGenreStage.setTitle("JavaFX BookStore..  Add Genre");
+        addGenreStage.show();
+    }
+
+    @FXML
+    private void btnAddPublisherAction(ActionEvent event) throws Exception {
+
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/AddPublisher.fxml"));
+        Stage addPublisherStage = new Stage();
+        Scene addPublisherScene = new Scene(parent);
+        addPublisherStage.setScene(addPublisherScene);
+        addPublisherStage.setTitle("JavaFX BookStore..  Add Genre");
+        addPublisherStage.show();
+
+    }
+
+    @FXML
+    private void btnUpBookAction() throws Exception {
 
 
     }
 
     @FXML
-    private void btnDeleteBookAction(ActionEvent event) throws Exception {
+    private void btnUpAuthorAction() throws Exception {
 
 
     }
 
     @FXML
-    private void btnSettingsAction(ActionEvent event) throws Exception {
+    private void btnUpGenreAction() throws Exception {
+
+
+    }
+
+    @FXML
+    private void btnUpPubAction() throws Exception {
+
+
+    }
+
+    @FXML
+    private void btnDelBookAction() throws Exception {
+
+
+    }
+
+    @FXML
+    private void btnDelAuthorAction() throws Exception {
+
+
+    }
+
+    @FXML
+    private void btnDelGenAction() throws Exception {
+
+
+    }
+
+    @FXML
+    private void btnDelPubAction() throws Exception {
+
+
+    }
+
+    @FXML
+    private void btnSetDbAccAction() throws Exception {
+
+
+    }
+
+    @FXML
+    private void btnSetDbSchAction() throws Exception {
+
+
+    }
+
+    @FXML
+    private void btnSetUpDataAction() throws Exception {
+
+
+    }
+
+    @FXML
+    private void btnSetUsersAction() throws Exception {
 
 
     }

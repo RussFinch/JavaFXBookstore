@@ -6,7 +6,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 /**
- * controller class for AddBook.fxml.
+ * controller class for AddGenre.fxml.
  * @author russellfincham
  * @version 0.1
  * @since 12-07-18

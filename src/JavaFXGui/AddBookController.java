@@ -2,6 +2,7 @@ package JavaFXGui;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
@@ -9,7 +10,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 /**
- * controller class for AddBook.fxml.
+ * controller class for AddGenre.fxml.
  * @author russellfincham
  * @version 0.1
  * @since 12-07-18
@@ -28,7 +29,7 @@ public class AddBookController implements Initializable {
     @FXML
     private TextArea txtBookDescriptionAdd;
     @FXML
-    private TextField txtBookPubDateAdd;
+    private DatePicker txtBookPubDateAdd;
     @FXML
     private TextField txtBookEditionAdd;
     @FXML
