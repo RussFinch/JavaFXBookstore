@@ -33,20 +33,20 @@
                   <TextArea fx:id="txtBookDescriptionAdd" layoutX="201.0" layoutY="44.0" prefHeight="75.0" prefWidth="509.0" promptText="Add Book Description" wrapText="true" />
                   <Label layoutX="201.0" layoutY="126.0" text="Publisher ID" />
                   <Label layoutX="201.0" layoutY="172.0" text="Book ID" />
-                  <TextField fx:id="txtBookIdResult" layoutX="201.0" layoutY="189.0" />
+                  <TextField fx:id="txtBookIdAdd" layoutX="201.0" layoutY="189.0" promptText="Enter ID" />
                   <Label layoutX="399.0" layoutY="127.0" text="Author ID" />
                   <Label layoutX="399.0" layoutY="173.0" text="Genre ID" />
                   <Label layoutX="595.0" layoutY="173.0" text="Qty" />
-                  <TextField fx:id="txtBookQtyResult" layoutX="595.0" layoutY="190.0" prefHeight="27.0" prefWidth="115.0" />
+                  <TextField fx:id="txtBookQtyAdd" layoutX="595.0" layoutY="190.0" prefHeight="27.0" prefWidth="115.0" promptText="Enter Qty" />
                   <DatePicker fx:id="txtBookPubDateAdd" layoutX="1.0" layoutY="142.0" prefHeight="27.0" prefWidth="170.0" promptText="Add Published Date" />
-                  <ChoiceBox layoutX="200.0" layoutY="143.0" prefHeight="27.0" prefWidth="168.0" />
-                  <ChoiceBox layoutX="399.0" layoutY="143.0" prefHeight="27.0" prefWidth="168.0" />
-                  <ChoiceBox layoutX="399.0" layoutY="188.0" prefHeight="27.0" prefWidth="168.0" />
+                  <ChoiceBox fx:id="cmbBookPublisherIdAdd" layoutX="200.0" layoutY="143.0" prefHeight="27.0" prefWidth="168.0" />
+                  <ChoiceBox fx:id="cmbBookAuthorIdAdd" layoutX="399.0" layoutY="143.0" prefHeight="27.0" prefWidth="168.0" />
+                  <ChoiceBox fx:id="cmdBookGenreIdAdd" layoutX="399.0" layoutY="188.0" prefHeight="27.0" prefWidth="168.0" />
                </children>
             </Group>
-            <Button layoutX="547.0" layoutY="249.0" mnemonicParsing="false" text="Add" />
-            <Button layoutX="638.0" layoutY="249.0" mnemonicParsing="false" text="Cancel" />
-            <Label layoutX="55.0" layoutY="241.0" prefHeight="27.0" prefWidth="444.0" text="Output issues here!" textFill="RED" />
+            <Button layoutX="547.0" layoutY="249.0" mnemonicParsing="false" onAction="#btnBookAddAction" text="Add" />
+            <Button fx:id="btnCancel" layoutX="638.0" layoutY="249.0" mnemonicParsing="false" onAction="#btnBookAddCancelAction" text="Cancel" />
+            <Label fx:id="lblBookAddIssues" layoutX="55.0" layoutY="241.0" prefHeight="27.0" prefWidth="444.0" textFill="RED" />
          </children>
       </Pane>
    </children>

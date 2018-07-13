@@ -136,7 +136,7 @@ public class HomeController implements Initializable {
 
         event.consume();
 
-        //convert DatePicker values to strings.
+        //collect and validate DatePicker values.
         LocalDate startDate = txtBookStartPubDateSearch.getValue();
         LocalDate endDate = txtBookEndPubDateSearch.getValue();
 
