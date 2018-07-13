@@ -98,7 +98,7 @@
                       <MenuItem mnemonicParsing="false" onAction="#btnAddBookAction" text="Book" />
                       <MenuItem mnemonicParsing="false" onAction="#btnAddAuthorAction" text="Author" />
                         <MenuItem mnemonicParsing="false" onAction="#btnAddGenreAction" text="Genre" />
-                        <MenuItem mnemonicParsing="false" text="Publisher" />
+                        <MenuItem mnemonicParsing="false" onMenuValidation="#btnAddPublisherAction" text="Publisher" />
                     </items>
                   </MenuButton>
                   <MenuButton mnemonicParsing="false" popupSide="TOP" text="Update">

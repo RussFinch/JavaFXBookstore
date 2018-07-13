@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="226.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXGui.AddPublisherController">
    <children>
       <Pane layoutX="66.0" layoutY="44.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -21,29 +20,30 @@
                      </font>
                   </Label>
                   <Label layoutX="2.0" layoutY="30.0" text="Publisher Name" />
-                  <TextField fx:id="txtPublisherNameResult" editable="false" layoutX="2.0" layoutY="46.0" prefHeight="27.0" prefWidth="245.0" />
-                  <Label layoutX="2.0" layoutY="76.0" text="Address 1" />
-                  <TextField fx:id="txtPublisherAddress1Result" editable="false" layoutX="2.0" layoutY="93.0" prefHeight="27.0" prefWidth="213.0" />
-                  <Label layoutX="2.0" layoutY="126.0" text="Town" />
-                  <TextField fx:id="txtPublisherTownResult" editable="false" layoutX="2.0" layoutY="142.0" />
+                  <TextField fx:id="txtPubNameAdd" layoutX="2.0" layoutY="46.0" prefHeight="27.0" prefWidth="245.0" />
                   <Label layoutX="269.0" layoutY="30.0" text="Publisher ID" />
-                  <TextField fx:id="txtPublisherIdResult" editable="false" layoutX="269.0" layoutY="46.0" prefHeight="27.0" prefWidth="176.0" />
-                  <Label layoutX="242.0" layoutY="76.0" text="Address 2" />
-                  <TextField fx:id="txtPublisherAddress2Result" editable="false" layoutX="241.0" layoutY="93.0" prefHeight="27.0" prefWidth="213.0" />
-                  <Label layoutX="200.0" layoutY="127.0" text="County" />
-                  <TextField fx:id="txtPublisherCountyResult" editable="false" layoutX="200.0" layoutY="143.0" />
+                  <TextField fx:id="txtPubIdAdd" layoutX="269.0" layoutY="46.0" prefHeight="27.0" prefWidth="176.0" />
                   <Label layoutX="467.0" layoutY="31.0" text="Postcode" />
-                  <TextField fx:id="txtPublisherPostcodeResult" editable="false" layoutX="467.0" layoutY="47.0" prefHeight="27.0" prefWidth="115.0" />
+                  <TextField fx:id="txtPubPostcodeAdd" layoutX="467.0" layoutY="47.0" prefHeight="27.0" prefWidth="115.0" />
+                  <Label layoutX="2.0" layoutY="76.0" text="Address 1" />
+                  <TextField fx:id="txtPubAddress1Add" layoutX="2.0" layoutY="93.0" prefHeight="27.0" prefWidth="213.0" />
+                  <Label layoutX="242.0" layoutY="76.0" text="Address 2" />
+                  <TextField fx:id="txtPubAddress2Add" layoutX="241.0" layoutY="93.0" prefHeight="27.0" prefWidth="213.0" />
                   <Label layoutX="477.0" layoutY="76.0" text="Address 3" />
-                  <TextField fx:id="txtPublisherAddress3Result" editable="false" layoutX="477.0" layoutY="93.0" prefHeight="27.0" prefWidth="213.0" />
+                  <TextField fx:id="txtPubAddress3Add" layoutX="477.0" layoutY="93.0" prefHeight="27.0" prefWidth="213.0" />
+                  <Label layoutX="2.0" layoutY="126.0" text="Town" />
+                  <TextField fx:id="txtPubTownAdd" layoutX="2.0" layoutY="142.0" />
+                  <Label layoutX="200.0" layoutY="127.0" text="County" />
+                  <TextField fx:id="txtPubCountyAdd" layoutX="200.0" layoutY="143.0" />
                </children>
             </Group>
             <Group layoutX="532.0" layoutY="186.0">
                <children>
-                  <Button mnemonicParsing="false" text="Add" />
-                  <Button layoutX="91.0" mnemonicParsing="false" text="Cancel" />
+                  <Button mnemonicParsing="false" onAction="#btnPubAddAction" text="Add" />
+                  <Button fx:id="btnCancel" layoutX="91.0" mnemonicParsing="false" onAction="#btnPubAddCancelAction" text="Cancel" />
                </children>
             </Group>
+            <Label fx:id="lblPubAddIssues" layoutX="20.0" layoutY="192.0" prefHeight="17.0" prefWidth="490.0" textFill="RED" />
          </children>
       </Pane>
    </children>

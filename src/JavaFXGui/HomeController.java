@@ -296,7 +296,7 @@ public class HomeController implements Initializable {
         Stage addPublisherStage = new Stage();
         Scene addPublisherScene = new Scene(parent);
         addPublisherStage.setScene(addPublisherScene);
-        addPublisherStage.setTitle("JavaFX BookStore..  Add Genre");
+        addPublisherStage.setTitle("JavaFX BookStore..  Add Publisher");
         addPublisherStage.show();
 
     }

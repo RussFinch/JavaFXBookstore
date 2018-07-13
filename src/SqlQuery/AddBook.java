@@ -57,8 +57,6 @@ public class AddBook {
                 + bookEdition + "', '"
                 + bookQty + "');";
 
-        System.out.println(sqlQuery);
-
         ArrayList<String[]> bookIdTest = new ArrayList<>(DbConnection.Manager(sqlTestID));
 
         if (bookIdTest.get(0)[0].equals("1")) {
