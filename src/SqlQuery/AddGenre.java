@@ -21,9 +21,10 @@ public class AddGenre {
      * returned to AddGenreController.btnGenreAddAction method for
      * the add genre Interface.
      * Data validity checking handled before execution of INSERT.
-     * @throws FileNotFoundException if data file cannot be accessed by
-     * @Param genreId
-     * @Param genreName
+     * @param genreId ID of new genre to be added
+     * @param genreName Name of new genre to be added
+     * @throws FileNotFoundException if file cannot be accessed by
+     * DbCredentials.DbUser().
      * @return String result of SQL transaction.
      */
     public static String Query(String genreId, String genreName)

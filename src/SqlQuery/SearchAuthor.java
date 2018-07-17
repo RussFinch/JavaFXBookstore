@@ -20,8 +20,10 @@ public class SearchAuthor {
      * database connection manager DbConnection.Manager. Results then
      * returned to DeleteAuthorController.nameChoiceBoxSelection method
      * to populate interface with details corresponding to selection.
-     * @Param authorDetail
-     * @return ArrayList<String[]> result of SQL transaction.
+     * @param authorDetail Detail of author to be searched for
+     * @throws FileNotFoundException if file cannot be accessed by
+     * DbCredentials.DbUser().
+     * @return ArrayList String result of SQL transaction.
      */
     public static ArrayList<String[]> ID(String authorDetail)
             throws FileNotFoundException {

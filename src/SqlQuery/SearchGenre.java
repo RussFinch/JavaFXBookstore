@@ -20,8 +20,9 @@ public class SearchGenre {
      * database connection manager DbConnection.Manager. Results then
      * returned to DeleteGenreController.nameChoiceBoxSelection method
      * to populate interface with details corresponding to selection.
-     * @Param genreDetail
-     * @return ArrayList<String[]> result of SQL transaction.
+     * @param genreDetail details required to generate choice box data
+     * @return ArrayList String result of SQL transaction.
+     * @throws FileNotFoundException if file cannot be found for DB user
      */
     public static ArrayList<String[]> Name(String genreDetail)
             throws FileNotFoundException {

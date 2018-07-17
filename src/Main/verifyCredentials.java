@@ -17,6 +17,8 @@ public class verifyCredentials {
      * This method matches manually input user credentials against those specified
      * in the file accessed by DbCredentials.DbUser.
      * @throws FileNotFoundException if DbCredentials.DbUser missing login file.
+     * @param receivedUserID User ID entered by the user on Login screen
+     * @param receivedPwd Password entered by user on Login screen
      * @return outcome of login process.
      */
 

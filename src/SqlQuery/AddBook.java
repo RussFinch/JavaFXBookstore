@@ -21,17 +21,18 @@ public class AddBook {
      * returned to AddBookController.btnBookAddAction method for
      * the add Book Interface.
      * Data validity checking handled before execution of INSERT.
-     * @throws FileNotFoundException if data file cannot be accessed by
-     * @Param bookId
-     * @Param bookTitle
-     * @Param bookDescription
-     * @Param bookPubDate
-     * @Param bookEdition
-     * @Param bookPrice
-     * @Param bookPublisherId
-     * @Param bookAuthorId
-     * @Param bookGenreId
-     * @Param bookQty
+     * @param bookId The ID of the book to be added
+     * @param bookTitle The title of the book to be added
+     * @param bookDescription description of the book to be added
+     * @param bookPubDate published date of the book to be added
+     * @param bookEdition edition of the book to be added
+     * @param bookPrice price of the book to be added
+     * @param bookPublisherId ID of the books publisher
+     * @param bookAuthorId ID of the books author
+     * @param bookGenreId ID of the books genre
+     * @param bookQty Qty of this book
+     * @throws FileNotFoundException if file cannot be accessed by
+     * DbCredentials.DbUser().
      * @return String result of SQL transaction.
      */
     public static String Query(String bookId, String bookTitle, String bookDescription,

@@ -21,10 +21,11 @@ public class AddAuthor {
      * returned to AddAuthorController.btnAuthorAddAction method for
      * the add genre Interface.
      * Data validity checking handled before execution of INSERT.
-     * @throws FileNotFoundException if data file cannot be accessed by
-     * @Param authorId
-     * @Param authorFirstName
-     * @Param authorSurname
+     * @param authorId ID of author input into interface
+     * @param authorFirstName first name of author input into interface
+     * @param authorSurname surname of author input into interface
+     * @throws FileNotFoundException if file cannot be accessed by
+     * DbCredentials.DbUser().
      * @return String result of SQL transaction.
      */
     public static String Query(String authorId, String authorFirstName,

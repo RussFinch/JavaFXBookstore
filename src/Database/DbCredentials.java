@@ -18,7 +18,8 @@ public class DbCredentials {
      * from file and is used by all methods that require this information.
      * Details collected from file using properties file type.
      * @return UserID, Password and Database url returned as String.
-     * @throws FileNotFoundException if file cannot be accessed.
+     * @throws FileNotFoundException if file cannot be accessed by
+     * DbCredentials.DbUser().
      */
 
     public final static String[] DbUser() throws FileNotFoundException {

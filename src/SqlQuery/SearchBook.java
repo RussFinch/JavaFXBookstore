@@ -21,18 +21,19 @@ public class SearchBook {
      * returned to btnSearchBookAction method for the Home user Interface.
      * @throws FileNotFoundException if data file cannot be accessed by
      * DbCredentials.DbUser.
-     * @param bookId
-     * @param bookTitle
-     * @param bookDescription
-     * @param bookStartPubDate
-     * @param bookEndPubDate
-     * @param bookEdition
-     * @param authorFName
-     * @param authorLName
-     * @param genreId
-     * @param genreName
-     * @param publisherId
-     * @param publisherName
+     * @param bookId ID of book to be found
+     * @param bookTitle Title of book to be found
+     * @param bookDescription Description of book to be found
+     * @param bookStartPubDate Start published date of book to be found
+     * @param bookEndPubDate End published date of book to be found
+     * @param bookEdition Edition of book to be found
+     * @param authorId ID of author to be found
+     * @param authorFName First name of book to be found
+     * @param authorLName Surname of book to be found
+     * @param genreId Genre Id of book to be found
+     * @param genreName Genre Name of book to be found
+     * @param publisherId Publisher Id of book to be found
+     * @param publisherName Publisher Name of book to be found
      * @return List Array of results returned to search book button action control.
      */
     public static List<String[]> Query(String bookId, String bookTitle, String bookDescription,

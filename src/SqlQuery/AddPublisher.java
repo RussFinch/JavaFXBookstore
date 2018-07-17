@@ -21,15 +21,16 @@ public class AddPublisher {
      * returned to AddPublisherController.btnPubAddAction method for
      * the add Publisher Interface.
      * Data validity checking handled before execution of INSERT.
-     * @throws FileNotFoundException if data file cannot be accessed by
-     * @Param pubId
-     * @Param pubName
-     * @Param pubPostcode
-     * @Param pubAddress1
-     * @Param pubAddress2
-     * @Param pubAddress3
-     * @Param pubTown
-     * @Param pubCounty
+     * @param pubId ID of publisher to be added
+     * @param pubName Name of Publisher to be added
+     * @param pubPostcode Postcode of publisher to be added
+     * @param pubAddress1 address of publisher to be added
+     * @param pubAddress2 address of publisher to be added
+     * @param pubAddress3 address of publisher to be added
+     * @param pubTown Town of publisher to be added
+     * @param pubCounty county of publisher to be added
+     * @throws FileNotFoundException if file cannot be accessed by
+     * DbCredentials.DbUser().
      * @return String result of SQL transaction.
      */
     public static String Query(String pubId, String pubName, String pubPostcode,

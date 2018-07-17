@@ -20,14 +20,15 @@ public class UpdatePublisher {
      * the Update publisher Interface.
      * Data validity checking handled before execution of UPDATE.
      * @throws FileNotFoundException if data file cannot be accessed by
-     * @Param recordToUpdate
-     * @Param pubId
-     * @Param pubName
-     * @Param pubPostcode
-     * @Param pubAddress1
-     * @Param pubAddress2
-     * @Param pubAddress3
-     * @Param pubTown
+     * @param recordToUpdate The ID of the record to update
+     * @param pubId New Publisher ID
+     * @param pubName New Publisher name
+     * @param pubPostcode New postcode
+     * @param pubAddress1 New address line 1
+     * @param pubAddress2 New address line 2
+     * @param pubAddress3 New address line 3
+     * @param pubTown New Town address
+     * @param pubCounty New county address
      * @return String result of SQL transaction.
      */
     public static String Query(String recordToUpdate, String pubId, String pubName,

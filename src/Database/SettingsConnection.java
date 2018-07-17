@@ -14,7 +14,7 @@ public class SettingsConnection {
     /**
      * This method is used for all queries that require the value of
      * a system setting to be returned.
-     * @throws FileNotFoundException if file cannot be accessed by
+     * @throws FileNotFoundException if DbCredentials.DbUser missing login file.
      * DbCredentials.DbUser().
      * @param sqlQuery query to be presented to the database.
      * @return settingValue.

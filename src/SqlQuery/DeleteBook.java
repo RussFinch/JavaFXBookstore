@@ -19,8 +19,9 @@ public class DeleteBook {
      * returned to DeleteBookController.btnBookDelAction method for
      * the Delete Book Interface.
      * Data validity checking handled before execution of DELETE.
-     * @throws FileNotFoundException if data file cannot be accessed by
-     * @Param bookId
+     * @param bookId ID of book to be deleted
+     * @throws FileNotFoundException if file cannot be accessed by
+     * DbCredentials.DbUser().
      * @return String result of SQL transaction.
      */
     public static String Query(String bookId)

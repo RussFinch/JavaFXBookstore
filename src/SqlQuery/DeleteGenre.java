@@ -21,8 +21,9 @@ public class DeleteGenre {
      * returned to DeleteGenreController.btnGenreDelAction method for
      * the Delete Genre Interface.
      * Data validity checking handled before execution of DELETE.
-     * @throws FileNotFoundException if data file cannot be accessed by
-     * @Param genreId
+     * @param genreId ID of genre to be deleted
+     * @throws FileNotFoundException if file cannot be accessed by
+     * DbCredentials.DbUser().
      * @return String result of SQL transaction.
      */
     public static String Query(String genreId)

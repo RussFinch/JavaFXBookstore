@@ -20,8 +20,10 @@ public class SearchPublisher {
      * database connection manager DbConnection.Manager. Results then
      * returned to DeletePublisherController.nameChoiceBoxSelection method
      * to populate interface with details corresponding to selection.
-     * @Param publisherDetail
-     * @return ArrayList<String[]> result of SQL transaction.
+     * @param publisherDetail details required to generate choice box data
+     * @throws FileNotFoundException if data file cannot be accessed by
+     * DbCredentials.DbUser.
+     * @return ArrayList String result of SQL transaction.
      */
     public static ArrayList<String[]> Name(String publisherDetail)
             throws FileNotFoundException {

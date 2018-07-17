@@ -20,17 +20,17 @@ public class UpdateBook {
      * the Update Book Interface.
      * Data validity checking handled before execution of UPDATE.
      * @throws FileNotFoundException if data file cannot be accessed by
-     * @Param recordToUpdate
-     * @Param bookId
-     * @Param bookTitle
-     * @Param bookDescription
-     * @Param bookPubDate
-     * @Param bookEdition
-     * @Param bookPrice
-     * @Param bookPublisherId
-     * @Param bookAuthorId
-     * @Param bookGenreId
-     * @Param bookQty
+     * @param recordToUpdate Book ID of the record to update
+     * @param bookId New ID for the book record that needs updating
+     * @param bookTitle New title for the book
+     * @param bookDescription new description for the book
+     * @param bookPubDate New published date for the book
+     * @param bookEdition New edition for the book
+     * @param bookPrice New price for the book
+     * @param bookPublisherId New publisher ID for the book
+     * @param bookAuthorId New usthor ID for the book
+     * @param bookGenreId New genre ID for the book
+     * @param bookQty New quatity of the book
      * @return String result of SQL transaction.
      */
     public static String Query(String recordToUpdate, String bookId, String bookTitle,

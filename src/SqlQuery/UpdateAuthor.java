@@ -20,10 +20,10 @@ public class UpdateAuthor {
      * the UpdateAuthor Interface.
      * Data validity checking handled before execution of UPDATE.
      * @throws FileNotFoundException if data file cannot be accessed by
-     * @Param recordToUpdate
-     * @Param authorId
-     * @Param authorFName
-     * @Param authorSName
+     * @param recordToUpdate ID of the record to be updated
+     * @param authorId New ID of the record to be updated
+     * @param authorFName Authors first name
+     * @param authorSName Authors Surname
      * @return String result of SQL transaction.
      */
     public static String Query(String recordToUpdate, String authorId, String authorFName,

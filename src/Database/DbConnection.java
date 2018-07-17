@@ -17,11 +17,11 @@ public class DbConnection {
     /**
     * This method manages Data collection from the database.
     * It receives the query which it then passes.  It generates
-    * a ListArray<String[]> of the results..
-    * @throws java.io.FileNotFoundException if data file cannot be accessed by
+    * a ListArray of the results..
+    * @throws java.io.FileNotFoundException if DbCredentials.DbUser missing login file.
     * DbCredentials.DbUser.
-    * @param sqlQuery
-    * @return ListArray<String[]> returned to calling method..
+    * @param sqlQuery Query to be run against database.
+    * @return ListArray String[] returned to calling method..
     */
 
     public static List<String[]> Manager(String sqlQuery) throws FileNotFoundException {

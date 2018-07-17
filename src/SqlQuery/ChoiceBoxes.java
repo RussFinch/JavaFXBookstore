@@ -17,7 +17,7 @@ public class ChoiceBoxes {
      * This method generates SQL for displaying
      * selections for a Publisher ID Choice box.
      * @throws FileNotFoundException if data file cannot be accessed by
-     * @return resultTable ArrayList<string> result of SQL transaction.
+     * @return resultTable ArrayList string result of SQL transaction.
      */
     public static ArrayList<String> PublisherIdChoice() throws FileNotFoundException {
 
@@ -38,7 +38,7 @@ public class ChoiceBoxes {
      * This method generates SQL for displaying
      * selections for a Publisher Name Choice box.
      * @throws FileNotFoundException if data file cannot be accessed by
-     * @return resultTable ArrayList<string> result of SQL transaction.
+     * @return resultTable ArrayList string result of SQL transaction.
      */
     public static ArrayList<String> PublisherNameChoice() throws FileNotFoundException {
 
@@ -59,7 +59,7 @@ public class ChoiceBoxes {
      * This method generates SQL for displaying
      * selections for a Author ID Choice box.
      * @throws FileNotFoundException if data file cannot be accessed by
-     * @return resultTable ArrayList<string> result of SQL transaction.
+     * @return resultTable ArrayList string result of SQL transaction.
      */
     public static ArrayList<String> AuthorIdChoice() throws FileNotFoundException {
 
@@ -79,8 +79,9 @@ public class ChoiceBoxes {
     /**
      * This method generates SQL for displaying
      * selections for a Genre ID Choice box.
-     * @throws FileNotFoundException if data file cannot be accessed by
-     * @return resultTable ArrayList<string> result of SQL transaction.
+     * @throws FileNotFoundException if file cannot be accessed by
+     * DbCredentials.DbUser().
+     * @return resultTable ArrayList string result of SQL transaction.
      */
     public static ArrayList<String> GenreIdChoice() throws FileNotFoundException {
 
@@ -101,7 +102,7 @@ public class ChoiceBoxes {
      * This method generates SQL for displaying
      * selections for a Genre Name Choice box.
      * @throws FileNotFoundException if data file cannot be accessed by
-     * @return resultTable ArrayList<string> result of SQL transaction.
+     * @return resultTable ArrayList string result of SQL transaction.
      */
     public static ArrayList<String> GenreNameChoice() throws FileNotFoundException {
 

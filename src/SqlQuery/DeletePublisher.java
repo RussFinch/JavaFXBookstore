@@ -21,8 +21,9 @@ public class DeletePublisher {
      * returned to DeletePublisherController.btnPubDelAction method for
      * the Delete Publisher Interface.
      * Data validity checking handled before execution of DELETE.
-     * @throws FileNotFoundException if data file cannot be accessed by
-     * @Param publisherId
+     * @param publisherId ID of the publisher to be deleted
+     * @throws FileNotFoundException if file cannot be accessed by
+     * DbCredentials.DbUser().
      * @return String result of SQL transaction.
      */
     public static String Query(String publisherId)

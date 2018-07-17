@@ -20,9 +20,9 @@ public class UpdateGenre {
      * the UpdateGenre Interface.
      * Data validity checking handled before execution of UPDATE.
      * @throws FileNotFoundException if data file cannot be accessed by
-     * @Param recordToUpdate
-     * @Param genreId
-     * @Param genreName
+     * @param recordToUpdate current ID of the record to be updated
+     * @param genreId new ID for the record
+     * @param genreName new name for the record
      * @return String result of SQL transaction.
      */
     public static String Query(String recordToUpdate, String genreId, String genreName)
