@@ -1,8 +1,6 @@
 package JavaFXGui;
 
 import SqlQuery.AddAuthor;
-import SqlQuery.AddGenre;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -34,7 +32,7 @@ public class AddAuthorController implements Initializable {
     private Button btnCancel;
 
     @FXML
-    private void btnAuthorAddCancelAction() throws Exception {
+    private void btnAuthorAddCancelAction() {
 
         Stage addAuthorStage = (Stage) btnCancel.getScene().getWindow();
         addAuthorStage.close();

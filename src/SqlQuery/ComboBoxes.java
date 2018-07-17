@@ -23,6 +23,22 @@ public class ComboBoxes {
         return resultTable;
     }
 
+    public static ArrayList<String> PublisherNameCombo() throws FileNotFoundException {
+
+        ArrayList<String> resultTable = new ArrayList<>();
+
+        String pubNameSql = "SELECT publisher_name FROM publishers;";
+        ArrayList<String[]> pubNameSqlData = new ArrayList<>(DbConnection.Manager(pubNameSql));
+
+        for (String[] row: pubNameSqlData) {
+            for (String s : row) {
+                resultTable.add(s);
+            }
+        }
+
+        return resultTable;
+    }
+
     public static ArrayList<String> AuthorIdCombo() throws FileNotFoundException {
 
         ArrayList<String> resultTable = new ArrayList<>();

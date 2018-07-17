@@ -19,7 +19,7 @@ public class AddBook {
      * It generates the query which it then passes to the
      * database connection manager DbConnection.Manager. Results then
      * returned to AddBookController.btnBookAddAction method for
-     * the add genre Interface.
+     * the add Book Interface.
      * Data validity checking handled before execution of INSERT.
      * @throws FileNotFoundException if data file cannot be accessed by
      * @Param bookId
@@ -40,8 +40,6 @@ public class AddBook {
                                String bookGenreId, String bookQty)
             throws FileNotFoundException {
 
-        String result;
-
         String sqlTestID = "SELECT 1 FROM books WHERE id = '"
                 + bookId + "' LIMIT 1;";
 
@@ -60,12 +58,10 @@ public class AddBook {
         ArrayList<String[]> bookIdTest = new ArrayList<>(DbConnection.Manager(sqlTestID));
 
         if (bookIdTest.get(0)[0].equals("1")) {
-            result = "Book ID already in use.";
+            return "Book ID already in use.";
         }
         else {
-            result = UpdateQuery.queryDatabase(sqlQuery);
+            return UpdateQuery.queryDatabase(sqlQuery);
         }
-
-        return result;
     }
 }

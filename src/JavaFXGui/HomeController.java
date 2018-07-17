@@ -15,6 +15,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.io.FileNotFoundException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -23,8 +24,8 @@ import java.util.ResourceBundle;
 /**
  * controller class for Home.fxml.
  * @author russellfincham
- * @version 0.2
- * @since 10-07-18
+ * @version 0.3
+ * @since 13-07-18
  */
 
 public class HomeController implements Initializable {
@@ -32,10 +33,9 @@ public class HomeController implements Initializable {
      * Control for Home interface.  Allows for Book Search,
      * Data Add, Update, Delete and System Settings
      */
-
     //variables used for search and iterating search results.
-    private static int listNum = 0;
-    private static ArrayList<String[]> searchBookResult;
+    public static int listNum = 0;
+    public static ArrayList<String[]> searchBookResult;
 
     @FXML
     private Label lblSearchResultCounter;
@@ -130,11 +130,9 @@ public class HomeController implements Initializable {
 
     //Buttons
     @FXML
-    private void btnBookSearchAction(ActionEvent event) throws Exception {
+    private void btnBookSearchAction() throws Exception {
 
         listNum = 0;
-
-        event.consume();
 
         //collect and validate DatePicker values.
         LocalDate startDate = txtBookStartPubDateSearch.getValue();
@@ -217,9 +215,8 @@ public class HomeController implements Initializable {
     }
 
     @FXML
-    private void btnBookNextAction(ActionEvent event) throws Exception {
+    private void btnBookNextAction() {
 
-        event.consume();
         int listSize = searchBookResult.size();
 
         if (listNum < (listSize - 2)) {
@@ -229,9 +226,8 @@ public class HomeController implements Initializable {
     }
 
     @FXML
-    private void btnBookPrevAction(ActionEvent event) throws Exception {
+    private void btnBookPrevAction() {
 
-        event.consume();
         if (listNum > 0) {
             listNum = listNum - 1;
             SearchDisplayResult(listNum, searchBookResult);
@@ -239,17 +235,15 @@ public class HomeController implements Initializable {
     }
 
     @FXML
-    private void btnBookLastAction(ActionEvent event) throws Exception {
+    private void btnBookLastAction() {
 
-        event.consume();
         listNum = searchBookResult.size() - 2;
         SearchDisplayResult(listNum, searchBookResult);
     }
 
     @FXML
-    private void btnBookFirstAction(ActionEvent event) throws Exception {
+    private void btnBookFirstAction() {
 
-        event.consume();
         listNum = 0;
         SearchDisplayResult(listNum, searchBookResult);
     }
@@ -263,7 +257,6 @@ public class HomeController implements Initializable {
         addBookStage.setScene(addBookScene);
         addBookStage.setTitle("JavaFX BookStore..  Add Book");
         addBookStage.show();
-
     }
 
     @FXML
@@ -275,11 +268,10 @@ public class HomeController implements Initializable {
         addAuthorStage.setScene(addAuthorScene);
         addAuthorStage.setTitle("JavaFX BookStore..  Add Author");
         addAuthorStage.show();
-
     }
 
     @FXML
-    private void btnAddGenreAction(ActionEvent event) throws Exception {
+    private void btnAddGenreAction() throws Exception {
 
         Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/AddGenre.fxml"));
         Stage addGenreStage = new Stage();
@@ -290,7 +282,7 @@ public class HomeController implements Initializable {
     }
 
     @FXML
-    private void btnAddPublisherAction(ActionEvent event) throws Exception {
+    private void btnAddPublisherAction() throws Exception {
 
         Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/AddPublisher.fxml"));
         Stage addPublisherStage = new Stage();
@@ -298,79 +290,138 @@ public class HomeController implements Initializable {
         addPublisherStage.setScene(addPublisherScene);
         addPublisherStage.setTitle("JavaFX BookStore..  Add Publisher");
         addPublisherStage.show();
-
     }
 
     @FXML
-    private void btnUpBookAction() throws Exception {
+    private void btnUpdBookAction() throws Exception {
 
-
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/UpdateBook.fxml"));
+        Stage updBookStage = new Stage();
+        Scene updBookScene = new Scene(parent);
+        updBookStage.setScene(updBookScene);
+        updBookStage.setTitle("JavaFX BookStore..  Update Book");
+        updBookStage.show();
     }
 
     @FXML
-    private void btnUpAuthorAction() throws Exception {
+    private void btnUpdAuthorAction() throws Exception {
 
-
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/UpdateAuthor.fxml"));
+        Stage updAuthorStage = new Stage();
+        Scene updAuthorScene = new Scene(parent);
+        updAuthorStage.setScene(updAuthorScene);
+        updAuthorStage.setTitle("JavaFX BookStore..  Update Author");
+        updAuthorStage.show();
     }
 
     @FXML
-    private void btnUpGenreAction() throws Exception {
+    private void btnUpdGenreAction() throws Exception {
 
-
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/UpdateGenre.fxml"));
+        Stage updGenreStage = new Stage();
+        Scene updGenreScene = new Scene(parent);
+        updGenreStage.setScene(updGenreScene);
+        updGenreStage.setTitle("JavaFX BookStore..  Update Genre");
+        updGenreStage.show();
     }
 
     @FXML
-    private void btnUpPubAction() throws Exception {
+    private void btnUpdPubAction() throws Exception {
 
-
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/UpdatePublisher.fxml"));
+        Stage updPublisherStage = new Stage();
+        Scene updPublisherScene = new Scene(parent);
+        updPublisherStage.setScene(updPublisherScene);
+        updPublisherStage.setTitle("JavaFX BookStore..  Update Publisher");
+        updPublisherStage.show();
     }
 
     @FXML
     private void btnDelBookAction() throws Exception {
 
-
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/DeleteBook.fxml"));
+        Stage updPublisherStage = new Stage();
+        Scene updPublisherScene = new Scene(parent);
+        updPublisherStage.setScene(updPublisherScene);
+        updPublisherStage.setTitle("JavaFX BookStore..  Delete Book");
+        updPublisherStage.show();
     }
 
     @FXML
     private void btnDelAuthorAction() throws Exception {
 
-
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/DeleteAuthor.fxml"));
+        Stage delAuthorStage = new Stage();
+        Scene delAuthorScene = new Scene(parent);
+        delAuthorStage.setScene(delAuthorScene);
+        delAuthorStage.setTitle("JavaFX BookStore..  Delete Author");
+        delAuthorStage.show();
     }
 
     @FXML
     private void btnDelGenAction() throws Exception {
 
-
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/DeleteGenre.fxml"));
+        Stage delGenreStage = new Stage();
+        Scene delGenreScene = new Scene(parent);
+        delGenreStage.setScene(delGenreScene);
+        delGenreStage.setTitle("JavaFX BookStore..  Delete Genre");
+        delGenreStage.show();
     }
 
     @FXML
     private void btnDelPubAction() throws Exception {
 
-
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/DeletePublisher.fxml"));
+        Stage delPublisherStage = new Stage();
+        Scene delPublisherScene = new Scene(parent);
+        delPublisherStage.setScene(delPublisherScene);
+        delPublisherStage.setTitle("JavaFX BookStore..  Delete Publisher");
+        delPublisherStage.show();
     }
 
     @FXML
     private void btnSetDbAccAction() throws Exception {
 
-
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/SetDbAccess.fxml"));
+        Stage setDbAccessStage = new Stage();
+        Scene setDbAccessScene = new Scene(parent);
+        setDbAccessStage.setScene(setDbAccessScene);
+        setDbAccessStage.setTitle("JavaFX BookStore..  Setup Db Access");
+        setDbAccessStage.show();
     }
 
     @FXML
     private void btnSetDbSchAction() throws Exception {
 
-
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/SetDbSchema.fxml"));
+        Stage SetDbSchemaStage = new Stage();
+        Scene SetDbSchemaScene = new Scene(parent);
+        SetDbSchemaStage.setScene(SetDbSchemaScene);
+        SetDbSchemaStage.setTitle("JavaFX BookStore..  Setup Db Schema");
+        SetDbSchemaStage.show();
     }
 
     @FXML
     private void btnSetUpDataAction() throws Exception {
 
-
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/SetupData.fxml"));
+        Stage SetupDataStage = new Stage();
+        Scene SetupDataScene = new Scene(parent);
+        SetupDataStage.setScene(SetupDataScene);
+        SetupDataStage.setTitle("JavaFX BookStore..  Setup Data");
+        SetupDataStage.show();
     }
 
     @FXML
     private void btnSetUsersAction() throws Exception {
 
-
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/SetupUsers.fxml"));
+        Stage SetupUsersStage = new Stage();
+        Scene SetupUsersScene = new Scene(parent);
+        SetupUsersStage.setScene(SetupUsersScene);
+        SetupUsersStage.setTitle("JavaFX BookStore..  Setup Users");
+        SetupUsersStage.show();
     }
     /**
      * Initializes the controller class.
@@ -380,7 +431,44 @@ public class HomeController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
+        try {
+            LocalDate startDate = txtBookStartPubDateSearch.getValue();
+            LocalDate endDate = txtBookEndPubDateSearch.getValue();
+
+            //default date values set as below.
+            if (startDate == null) {
+                startDate = LocalDate.of(0000, 01, 01);
+            }
+            if (endDate == null) {
+                endDate = LocalDate.now();
+            }
+
+            //Retrieve data.
+            String bookId = "3003";
+            String bookTitle = txtBookTitleSearch.getText();
+            String bookDescription = txtBookDescriptionSearch.getText();
+            String bookStartPubDate = startDate.toString();
+            String bookEndPubDate = endDate.toString();
+            String bookEdition = txtBookEditionSearch.getText();
+            String authorId = txtAuthorIDSearch.getText();
+            String authorFName = txtAuthorFNameSearch.getText();
+            String authorLName = txtAuthorLNameSearch.getText();
+            String genreId = txtGenreIDSearch.getText();
+            String genreName = txtGenreNameSearch.getText();
+            String publisherId = txtPublisherIDSearch.getText();
+            String publisherName = txtPublisherNameSearch.getText();
+
+            //Initiate results collection from database.
+            searchBookResult = new ArrayList<>(BookSearch.Query(bookId, bookTitle,
+                    bookDescription, bookStartPubDate, bookEndPubDate,
+                    bookEdition, authorId, authorFName, authorLName,
+                    genreId, genreName, publisherId, publisherName));
+
+            SearchDisplayResult(listNum, searchBookResult);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
-
-
 }
