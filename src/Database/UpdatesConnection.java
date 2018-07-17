@@ -6,11 +6,11 @@ import java.sql.*;
 /**
  * This class manages database updates.
  * @author russellfincham
- * @version 0.2
- * @since 05-07-18
+ * @version 0.3
+ * @since 17-07-18
  */
 
-public class UpdateQuery {
+public class UpdatesConnection {
 
     /**
      * This method is used for all queries that require an update

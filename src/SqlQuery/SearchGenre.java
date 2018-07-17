@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @version 0.1
  * @since 17-07-18
  */
-public class GenreSearch {
+public class SearchGenre {
     /**
      * This method generates SQL following Genre selection when
      * using choicebox on delete Genre interface.

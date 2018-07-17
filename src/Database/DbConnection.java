@@ -7,22 +7,21 @@ import java.util.List;
 
 /**
  * This class manages connections to the Database.
- * It
  * @author russellfincham
- * @version 0.2
- * @since 10-07-18
+ * @version 0.3
+ * @since 17-07-18
  */
 
 public class DbConnection {
 
     /**
     * This method manages Data collection from the database.
-    * It receives the query which it then passes.  It then generatates
-    * a List Array of the results..
+    * It receives the query which it then passes.  It generates
+    * a ListArray<String[]> of the results..
     * @throws java.io.FileNotFoundException if data file cannot be accessed by
     * DbCredentials.DbUser.
     * @param sqlQuery
-    * @return List Array returned to calling method..
+    * @return ListArray<String[]> returned to calling method..
     */
 
     public static List<String[]> Manager(String sqlQuery) throws FileNotFoundException {
@@ -48,7 +47,8 @@ public class DbConnection {
                 resultTable.add(row);
             }
 
-            //If results null build row 0 of list array to specify so.
+            //If results null build row 0 of list array to specify no
+            // further results.
             if (!rset.next()) {
                 String[] row = new String[nCol];
                 for (int iCol = 1; iCol <= nCol; iCol++) {

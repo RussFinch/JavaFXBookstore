@@ -1,7 +1,7 @@
 package SqlQuery;
 
 import Database.DbConnection;
-import Database.UpdateQuery;
+import Database.UpdatesConnection;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
@@ -18,7 +18,7 @@ public class AddGenre {
      * This method generates SQL For a genre addition.
      * It generates the query which it then passes to the
      * database connection manager DbConnection.Manager. Results then
-     * returned to AddGenreController.btnGernreAddAction method for
+     * returned to AddGenreController.btnGenreAddAction method for
      * the add genre Interface.
      * Data validity checking handled before execution of INSERT.
      * @throws FileNotFoundException if data file cannot be accessed by
@@ -50,7 +50,7 @@ public class AddGenre {
             result = "Name or ID already in use.";
         }
         else {
-            result = UpdateQuery.queryDatabase(sqlQuery);
+            result = UpdatesConnection.queryDatabase(sqlQuery);
         }
 
         return result;

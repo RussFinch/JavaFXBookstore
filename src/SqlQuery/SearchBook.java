@@ -13,7 +13,7 @@ import java.util.List;
  * @since 09-07-18
  */
 
-public class BookSearch {
+public class SearchBook {
     /**
      * This method generates SQL For a search of the "complete" dbase view.
      * It generates the query which it then passes to the

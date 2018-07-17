@@ -2,7 +2,7 @@ package JavaFXGui;
 
 import SqlQuery.ChoiceBoxes;
 import SqlQuery.DeleteGenre;
-import SqlQuery.GenreSearch;
+import SqlQuery.SearchGenre;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -55,7 +55,7 @@ public class DeleteGenreController implements Initializable {
         ArrayList<String[]> genreNameSelection = null;
 
         try {
-            genreNameSelection = GenreSearch.Name(genreName);
+            genreNameSelection = SearchGenre.Name(genreName);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

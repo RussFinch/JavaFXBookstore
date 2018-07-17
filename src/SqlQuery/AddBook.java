@@ -1,7 +1,7 @@
 package SqlQuery;
 
 import Database.DbConnection;
-import Database.UpdateQuery;
+import Database.UpdatesConnection;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
@@ -61,7 +61,7 @@ public class AddBook {
             return "Book ID already in use.";
         }
         else {
-            return UpdateQuery.queryDatabase(sqlQuery);
+            return UpdatesConnection.queryDatabase(sqlQuery);
         }
     }
 }

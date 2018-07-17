@@ -6,11 +6,11 @@ import java.sql.*;
 /**
  * This class reads system settings held in the database.
  * @author russellfincham
- * @version 0.2
- * @since 04-07-18
+ * @version 0.3
+ * @since 17-07-18
  */
 
-public class SettingsQuery {
+public class SettingsConnection {
     /**
      * This method is used for all queries that require the value of
      * a system setting to be returned.

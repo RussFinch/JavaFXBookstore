@@ -55,7 +55,7 @@ public class DeleteAuthorController implements Initializable {
         ArrayList<String[]> authorIdSelection = null;
 
         try {
-            authorIdSelection = AuthorSearch.ID(AuthorId);
+            authorIdSelection = SearchAuthor.ID(AuthorId);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

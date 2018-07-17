@@ -2,7 +2,7 @@ package JavaFXGui;
 
 import SqlQuery.ChoiceBoxes;
 import SqlQuery.DeletePublisher;
-import SqlQuery.PublisherSearch;
+import SqlQuery.SearchPublisher;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -67,7 +67,7 @@ public class DeletePublisherController implements Initializable {
         ArrayList<String[]> pubNameSelection = null;
 
         try {
-            pubNameSelection = PublisherSearch.Name(publisherName);
+            pubNameSelection = SearchPublisher.Name(publisherName);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

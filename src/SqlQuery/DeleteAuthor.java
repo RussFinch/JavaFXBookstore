@@ -1,7 +1,7 @@
 package SqlQuery;
 
 import Database.DbConnection;
-import Database.UpdateQuery;
+import Database.UpdatesConnection;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
@@ -40,7 +40,7 @@ public class DeleteAuthor {
             return "Cannot Delete.  Assigned to books";
         }
         else {
-            return UpdateQuery.queryDatabase(sqlQuery);
+            return UpdatesConnection.queryDatabase(sqlQuery);
         }
     }
 }

@@ -1,4 +1,6 @@
-package Database;
+package SqlQuery;
+
+import Database.DbConnection;
 
 import java.io.FileNotFoundException;
 
@@ -10,7 +12,7 @@ import java.io.FileNotFoundException;
  * @since 09-07-18
  */
 
-public class SetupManager {
+public class SchemaSetupManager {
     /**
      * This method creates the database Schema when the system is
      * first used. It is called from System settings once database

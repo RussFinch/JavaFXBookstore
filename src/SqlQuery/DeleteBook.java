@@ -1,6 +1,6 @@
 package SqlQuery;
 
-import Database.UpdateQuery;
+import Database.UpdatesConnection;
 import java.io.FileNotFoundException;
 
 /**
@@ -31,7 +31,7 @@ public class DeleteBook {
         String sqlQuery = "DELETE FROM books WHERE "
                 + "id = '" + bookId + "';";
 
-        result = UpdateQuery.queryDatabase(sqlQuery);
+        result = UpdatesConnection.queryDatabase(sqlQuery);
 
         return result;
     }

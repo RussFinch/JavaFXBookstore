@@ -6,17 +6,17 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * This class manages the database and user credentials.
+ * This class manages the database user credentials.
  * @author russellfincham
- * @version 0.2
- * @since 05-07-18
+ * @version 0.3
+ * @since 17-07-18
  */
 
 public class DbCredentials {
     /**
      * This method collects database user ID, password and connection url
      * from file and is used by all methods that require this information.
-     *
+     * Details collected from file using properties file type.
      * @return UserID, Password and Database url returned as String.
      * @throws FileNotFoundException if file cannot be accessed.
      */
@@ -29,6 +29,7 @@ public class DbCredentials {
         Properties properties = new Properties();
 
         try {
+            //using properties file to select correct "property"
             properties.load(in);
             in.close();
 

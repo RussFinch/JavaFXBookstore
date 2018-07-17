@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @version 0.1
  * @since 17-07-18
  */
-public class PublisherSearch {
+public class SearchPublisher {
     /**
      * This method generates SQL following Publisher selection when
      * using choicebox on delete publisher interface.

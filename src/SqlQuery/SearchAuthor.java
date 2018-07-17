@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @version 0.1
  * @since 17-07-18
  */
-public class AuthorSearch {
+public class SearchAuthor {
     /**
      * This method generates SQL following Author selection when
      * using choicebox on delete Author interface.

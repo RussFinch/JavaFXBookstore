@@ -1,6 +1,6 @@
 package SqlQuery;
 
-import Database.UpdateQuery;
+import Database.UpdatesConnection;
 import java.io.FileNotFoundException;
 
 /**
@@ -49,7 +49,7 @@ public class UpdatePublisher {
                 + "address_county = '" + pubCounty + "' "
                 + "WHERE publisher_id = '" + recordToUpdate + "';";
 
-        result = UpdateQuery.queryDatabase(sqlQuery);
+        result = UpdatesConnection.queryDatabase(sqlQuery);
 
         return result;
     }

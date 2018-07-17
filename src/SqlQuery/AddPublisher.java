@@ -1,7 +1,7 @@
 package SqlQuery;
 
 import Database.DbConnection;
-import Database.UpdateQuery;
+import Database.UpdatesConnection;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
@@ -58,7 +58,7 @@ public class AddPublisher {
             result = "Publisher ID already in use.";
         }
         else {
-            result = UpdateQuery.queryDatabase(sqlQuery);
+            result = UpdatesConnection.queryDatabase(sqlQuery);
         }
 
         return result;

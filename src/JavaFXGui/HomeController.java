@@ -1,12 +1,9 @@
 package JavaFXGui;
 
-import SqlQuery.BookSearch;
-import SqlQuery.BookUpdate;
-import javafx.event.ActionEvent;
+import SqlQuery.SearchBook;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.DatePicker;
@@ -15,7 +12,6 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import java.io.FileNotFoundException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -40,7 +36,7 @@ public class HomeController implements Initializable {
     @FXML
     private Label lblSearchResultCounter;
 
-    //Book BookSearch TextFields
+    //Book SearchBook TextFields
     @FXML
     private TextField txtBookIdSearch;
     @FXML
@@ -162,7 +158,7 @@ public class HomeController implements Initializable {
         String publisherName = txtPublisherNameSearch.getText();
 
         //Initiate results collection from database.
-        searchBookResult = new ArrayList<>(BookSearch.Query(bookId, bookTitle,
+        searchBookResult = new ArrayList<>(SearchBook.Query(bookId, bookTitle,
                 bookDescription, bookStartPubDate, bookEndPubDate,
                 bookEdition, authorId, authorFName, authorLName,
                 genreId, genreName, publisherId, publisherName));
@@ -459,7 +455,7 @@ public class HomeController implements Initializable {
             String publisherName = txtPublisherNameSearch.getText();
 
             //Initiate results collection from database.
-            searchBookResult = new ArrayList<>(BookSearch.Query(bookId, bookTitle,
+            searchBookResult = new ArrayList<>(SearchBook.Query(bookId, bookTitle,
                     bookDescription, bookStartPubDate, bookEndPubDate,
                     bookEdition, authorId, authorFName, authorLName,
                     genreId, genreName, publisherId, publisherName));
