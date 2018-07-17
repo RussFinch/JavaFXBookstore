@@ -21,7 +21,9 @@
                             </font>
                         </Label>
                         <Label layoutX="2.0" layoutY="30.0" text="Publisher Name" />
+                  <ChoiceBox fx:id="chbPubNameDel" layoutX="2.0" layoutY="47.0" onAction="#nameChoiceBoxSelection" prefHeight="27.0" prefWidth="245.0" />
                         <Label layoutX="269.0" layoutY="30.0" text="Publisher ID" />
+                  <TextField fx:id="txtPubIdDel" editable="false" layoutX="269.0" layoutY="47.0" prefHeight="27.0" prefWidth="176.0" />
                         <Label layoutX="467.0" layoutY="31.0" text="Postcode" />
                         <TextField fx:id="txtPubPostcodeDel" editable="false" layoutX="467.0" layoutY="47.0" prefHeight="27.0" prefWidth="115.0" />
                         <Label layoutX="2.0" layoutY="76.0" text="Address 1" />
@@ -34,8 +36,6 @@
                         <TextField fx:id="txtPubTownDel" editable="false" layoutX="2.0" layoutY="142.0" />
                         <Label layoutX="200.0" layoutY="127.0" text="County" />
                         <TextField fx:id="txtPubCountyDel" editable="false" layoutX="200.0" layoutY="143.0" />
-                  <ChoiceBox fx:id="chbPubNameDel" layoutX="2.0" layoutY="47.0" onAction="#nameChoiceBoxSelection" prefHeight="27.0" prefWidth="245.0" />
-                  <TextField fx:id="txtPubIdDel" editable="false" layoutX="269.0" layoutY="47.0" prefHeight="27.0" prefWidth="176.0" />
                     </children>
                 </Group>
                 <Group layoutX="532.0" layoutY="186.0">

@@ -1,6 +1,6 @@
 package JavaFXGui;
 
-import SqlQuery.ComboBoxes;
+import SqlQuery.ChoiceBoxes;
 import SqlQuery.DeletePublisher;
 import SqlQuery.PublisherSearch;
 import javafx.fxml.FXML;
@@ -64,7 +64,6 @@ public class DeletePublisherController implements Initializable {
     private void nameChoiceBoxSelection() {
 
         String publisherName = chbPubNameDel.getValue();
-
         ArrayList<String[]> pubNameSelection = null;
 
         try {
@@ -81,19 +80,17 @@ public class DeletePublisherController implements Initializable {
         txtPubCountyDel.setText(pubNameSelection.get(0)[6]);
         txtPubPostcodeDel.setText(pubNameSelection.get(0)[7]);
     }
-
         /**
          * Initializes the controller class.
          *
          * @param url
          * @param rb
          */
-
         @Override
         public void initialize (URL url, ResourceBundle rb){
 
             try {
-                chbPubNameDel.getItems().setAll(ComboBoxes.PublisherNameCombo());
+                chbPubNameDel.getItems().setAll(ChoiceBoxes.PublisherNameChoice());
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }

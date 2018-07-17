@@ -1,7 +1,7 @@
 package JavaFXGui;
 
 import SqlQuery.AddBook;
-import SqlQuery.ComboBoxes;
+import SqlQuery.ChoiceBoxes;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -135,9 +135,9 @@ public class AddBookController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
 
         try {
-            cmbBookPublisherIdAdd.getItems().setAll(ComboBoxes.PublisherIdCombo());
-            cmbBookAuthorIdAdd.getItems().setAll(ComboBoxes.AuthorIdCombo());
-            cmdBookGenreIdAdd.getItems().setAll(ComboBoxes.GenreIdCombo());
+            cmbBookPublisherIdAdd.getItems().setAll(ChoiceBoxes.PublisherIdChoice());
+            cmbBookAuthorIdAdd.getItems().setAll(ChoiceBoxes.AuthorIdChoice());
+            cmdBookGenreIdAdd.getItems().setAll(ChoiceBoxes.GenreIdChoice());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

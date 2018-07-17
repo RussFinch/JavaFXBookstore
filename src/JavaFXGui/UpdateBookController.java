@@ -1,6 +1,6 @@
 package JavaFXGui;
 
-import SqlQuery.ComboBoxes;
+import SqlQuery.ChoiceBoxes;
 import SqlQuery.UpdateBook;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -163,9 +163,9 @@ public class UpdateBookController implements Initializable {
 
         //Populate combo boxes.
         try {
-            cmbBookPublisherIdUpd.getItems().setAll(ComboBoxes.PublisherIdCombo());
-            cmbBookAuthorIdUpd.getItems().setAll(ComboBoxes.AuthorIdCombo());
-            cmdBookGenreIdUpd.getItems().setAll(ComboBoxes.GenreIdCombo());
+            cmbBookPublisherIdUpd.getItems().setAll(ChoiceBoxes.PublisherIdChoice());
+            cmbBookAuthorIdUpd.getItems().setAll(ChoiceBoxes.AuthorIdChoice());
+            cmdBookGenreIdUpd.getItems().setAll(ChoiceBoxes.GenreIdChoice());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
