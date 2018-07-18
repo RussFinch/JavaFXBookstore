@@ -1,5 +1,6 @@
 package JavaFXGui;
 
+import SqlQuery.FirstBook;
 import SqlQuery.SearchBook;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +12,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -20,8 +20,8 @@ import java.util.ResourceBundle;
 /**
  * controller class for Home.fxml.
  * @author russellfincham
- * @version 0.3
- * @since 13-07-18
+ * @version 0.4
+ * @since 18-07-18
  */
 
 public class HomeController implements Initializable {
@@ -379,7 +379,7 @@ public class HomeController implements Initializable {
     @FXML
     private void btnSetDbAccAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/SetDbAccess.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/DbAccess.fxml"));
         Stage setDbAccessStage = new Stage();
         Scene setDbAccessScene = new Scene(parent);
         setDbAccessStage.setScene(setDbAccessScene);
@@ -390,7 +390,7 @@ public class HomeController implements Initializable {
     @FXML
     private void btnSetDbSchAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/SetDbSchema.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/BuildDbSchema.fxml"));
         Stage SetDbSchemaStage = new Stage();
         Scene SetDbSchemaScene = new Scene(parent);
         SetDbSchemaStage.setScene(SetDbSchemaScene);
@@ -440,7 +440,7 @@ public class HomeController implements Initializable {
             }
 
             //Retrieve data.
-            String bookId = "3003";
+            String bookId = txtBookIdResult.getText();
             String bookTitle = txtBookTitleSearch.getText();
             String bookDescription = txtBookDescriptionSearch.getText();
             String bookStartPubDate = startDate.toString();
@@ -455,7 +455,7 @@ public class HomeController implements Initializable {
             String publisherName = txtPublisherNameSearch.getText();
 
             //Initiate results collection from database.
-            searchBookResult = new ArrayList<>(SearchBook.Query(bookId, bookTitle,
+            searchBookResult = new ArrayList<>(FirstBook.Query(bookId, bookTitle,
                     bookDescription, bookStartPubDate, bookEndPubDate,
                     bookEdition, authorId, authorFName, authorLName,
                     genreId, genreName, publisherId, publisherName));

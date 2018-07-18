@@ -1,6 +1,7 @@
 package SqlQuery;
 
 import Database.DbConnection;
+import Database.UpdatesConnection;
 
 import java.io.FileNotFoundException;
 
@@ -24,11 +25,8 @@ public class SchemaSetupManager {
      * DbInterface.DbLogin.
      * @return String returned to calling code indicating setup has completed.
      */
-    public static String dbSetup() throws FileNotFoundException {
+    public static String dbSetupBooksTable() throws FileNotFoundException {
 
-        System.out.println("\nDatabase Setup Commencing...");
-
-        // SQL to create/verify Books database table
         String sqlCreateTableBooks = "CREATE TABLE IF NOT EXISTS books "
                 + "(id INT,"
                 + " title VARCHAR(50),"
@@ -40,11 +38,21 @@ public class SchemaSetupManager {
                 + " publish_date DATE,"
                 + " edition TINYINT,"
                 + " qty INT,"
-                + " PRIMARY KEY (id));";
-//        System.out.println("Books table verification "
-        DbConnection.Manager(sqlCreateTableBooks);
+                + " PRIMARY KEY (id),"
+                + " FOREIGN KEY (author_id) REFERENCES "
+                + " authors (author_id) ON UPDATE CASCADE,"
+                + " FOREIGN KEY (genre_id) REFERENCES "
+                + " genre (genre_id) ON UPDATE CASCADE,"
+                + " FOREIGN KEY (publisher_id) REFERENCES "
+                + "publishers (publisher_id) ON UPDATE CASCADE);";
 
-        //SQL to create/verify Publishers database table
+        String result = UpdatesConnection.queryDatabase(sqlCreateTableBooks);
+
+        return (result + ": Books Table Setup Complete\n\n");
+    }
+
+    public static String dbSetupPubsTable() throws FileNotFoundException {
+
         String sqlCreateTablePublishers = "CREATE TABLE IF NOT EXISTS publishers "
                 + "(publisher_id VARCHAR(10),"
                 + " publisher_name VARCHAR(50),"
@@ -55,43 +63,63 @@ public class SchemaSetupManager {
                 + " address_county VARCHAR(20),"
                 + " address_postcode VARCHAR(8),"
                 + " PRIMARY KEY (publisher_id));";
-//        System.out.println("Publishers table verification "
-        DbConnection.Manager(sqlCreateTablePublishers);
 
-        //SQL to create/verify Authors database table
+        String result = UpdatesConnection.queryDatabase(sqlCreateTablePublishers);
+
+        return (result + ": Publishers Table Setup Complete\n\n");
+    }
+
+    public static String dbSetupAuthTable() throws FileNotFoundException {
+
         String sqlCreateTableAuthors = "CREATE TABLE IF NOT EXISTS authors "
                 + "(author_id VARCHAR(10),"
                 + " author_firstname VARCHAR(50),"
                 + " author_surname VARCHAR(20),"
                 + " PRIMARY KEY (author_id));";
-//        System.out.println("Authors table verification "
-        DbConnection.Manager(sqlCreateTableAuthors);
 
-        //SQL to create/verify genre database table
+        String result = UpdatesConnection.queryDatabase(sqlCreateTableAuthors);
+
+        return (result + ": Authors Table Setup Complete\n\n");
+    }
+
+    public static String dbSetupGenreTable() throws FileNotFoundException {
+
         String sqlCreateTableGenre = "CREATE TABLE IF NOT EXISTS genre "
                 + "(genre_id VARCHAR(3),"
                 + " genre_name VARCHAR(50),"
                 + " PRIMARY KEY (genre_id));";
-//        System.out.println("Genre table verification "
-        DbConnection.Manager(sqlCreateTableGenre);
 
-        //SQL to create/verify Users database table
+        String result = UpdatesConnection.queryDatabase(sqlCreateTableGenre);
+
+        return (result + ": Genre Table Setup Complete\n\n");
+    }
+
+    public static String dbSetupUsersTable() throws FileNotFoundException {
+
         String sqlCreateTableUsers = "CREATE TABLE IF NOT EXISTS users "
                 + "(user_id VARCHAR(255),"
                 + " user_password VARCHAR(50) NOT NULL,"
                 + " PRIMARY KEY (user_id));";
-//        System.out.println("Users table verification "
-        DbConnection.Manager(sqlCreateTableUsers);
 
-        //SQL to create/verify Settings database table
+        String result = UpdatesConnection.queryDatabase(sqlCreateTableUsers);
+
+        return (result + ": Users Table Setup Complete\n\n");
+    }
+
+    public static String dbSetupSettingsTable() throws FileNotFoundException {
+
         String sqlCreateTableSettings = "CREATE TABLE IF NOT EXISTS settings "
                 + "(setting_name VARCHAR(255),"
                 + " value VARCHAR(255),"
                 + " PRIMARY KEY (setting_name));";
-//        System.out.println("Settings table verification "
-        DbConnection.Manager(sqlCreateTableSettings);
 
-        //SQL to create the Complete table view for system searches
+        String result = UpdatesConnection.queryDatabase(sqlCreateTableSettings);
+
+        return (result + ": Settings Table Setup Complete\n\n");
+    }
+
+    public static String dbSetupCompleteView() throws FileNotFoundException {
+
         String sqlCreateCompleteView = "CREATE VIEW completeview AS "
                 + "SELECT authors.author_firstname, authors.author_surname, "
                 + "books.id, books.title, books.description, books.genre_id, "
@@ -104,8 +132,9 @@ public class SchemaSetupManager {
                 + "FROM books LEFT JOIN authors USING (author_id) "
                 + "RIGHT JOIN genre USING (genre_id) "
                 + "RIGHT JOIN publishers USING (publisher_id);";
-        DbConnection.Manager(sqlCreateCompleteView);
 
-        return "\nDatabase Setup/verification complete.";
+        String result = UpdatesConnection.queryDatabase(sqlCreateCompleteView);
+
+        return (result + ": Database View Setup Complete\n\n");
     }
 }
