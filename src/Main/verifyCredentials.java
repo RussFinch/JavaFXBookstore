@@ -29,7 +29,16 @@ public class verifyCredentials {
 
         //Validate input credentials against database user credentials.
         //loginString[0] = userName, loginString[1] = password
-        if (receivedUserID.equals(loginString[0]) && receivedPwd.equals(loginString[1])) {
+        if (loginString[0].equals(null) || (loginString[0].equals(""))) {
+            return "Dbase access User ID not configured";
+        }
+        else if (loginString[1].equals(null) || (loginString[1].equals(""))) {
+            return "Dbase access user Password not configured";
+        }
+        else if (loginString[2].equals(null) || (loginString[2].equals(""))) {
+            return "Dbase URL not configured";
+        }
+        else if (receivedUserID.equals(loginString[0]) && receivedPwd.equals(loginString[1])) {
             return "Signed In";
         }
         else {

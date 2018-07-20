@@ -35,9 +35,9 @@ public class DbCredentials {
             properties.load(in);
             in.close();
 
-            String UserId = properties.getProperty("UserId");
-            String Password = properties.getProperty("Password");
-            String DbUrl = properties.getProperty("DbUrl");
+            String UserId = properties.getProperty("UserId").replace("\\", "");
+            String Password = properties.getProperty("Password").replace("\\", "");;
+            String DbUrl = properties.getProperty("DbUrl").replace("\\", "");;
 
             data[0] = UserId;
             data[1] = Password;
@@ -63,6 +63,17 @@ public class DbCredentials {
 
         FileInputStream in = new FileInputStream("src/MySqlLogin.txt");
         Properties properties = new Properties();
+        String results = "Empty";
+
+        if (newPropertyValue.equals("UserId")) {
+            results = "DBase User ID has been Updated";
+        }
+        else if (newPropertyValue.equals("Password")) {
+            results = "DBase User Password has been Updated";
+        }
+        else if (newPropertyValue.equals("DbUrl")) {
+            results = "DBase URL has been Updated";
+        }
 
         try {
             //Load properties from file into properties table
@@ -80,6 +91,6 @@ public class DbCredentials {
             e.printStackTrace();
         }
 
-        return "DB Access Properties Updated..";
+        return results;
     }
 }

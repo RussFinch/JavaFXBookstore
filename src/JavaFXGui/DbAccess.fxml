@@ -32,10 +32,10 @@
             <Group layoutX="406.0" layoutY="170.0">
                <children>
                   <Button mnemonicParsing="false" onAction="#btnUpdateAction" text="Update" />
-                  <Button fx:id="btnCancel" layoutX="92.0" mnemonicParsing="false" onAction="#btnCancelAction" text="Cancel" />
+                  <Button fx:id="btnCancel" layoutX="92.0" mnemonicParsing="false" onAction="#btnCancelAction" text="Close" />
                </children>
             </Group>
-            <Label fx:id="lblSetAccessResult" layoutX="61.0" layoutY="227.0" prefHeight="17.0" prefWidth="294.0" textFill="RED" />
+            <Label fx:id="lblSetAccessResult" layoutX="61.0" layoutY="176.0" prefHeight="17.0" prefWidth="294.0" textFill="RED" />
          </children>
       </Pane>
    </children>
