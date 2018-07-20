@@ -2,7 +2,6 @@ package Database;
 
 import java.io.*;
 import java.sql.*;
-
 /**
  * This class manages data upload requests to the database.
  * It
@@ -10,7 +9,6 @@ import java.sql.*;
  * @version 0.2
  * @since 19-07-18
  */
-
 public class UploadData {
     /**
      * The method manages upload into the genre table in the database.
@@ -65,7 +63,6 @@ public class UploadData {
         }
         return result;
     }
-
     /**
      * The method manages upload into the authors table in the database.
      * The database is logged into before data is read line by line from uploadFile,
@@ -121,7 +118,6 @@ public class UploadData {
         }
         return result;
     }
-
     /**
      * The method manages upload into the books table in the database.
      * The database is logged into before data is read line by line from uploadFile,
@@ -197,7 +193,6 @@ public class UploadData {
         }
         return result;
     }
-
     /**
      * The method manages upload into the publishers table in the database.
      * The database is logged into before data is read line by line from uploadFile,
@@ -268,7 +263,6 @@ public class UploadData {
         }
         return result;
     }
-
 /**
  * The method manages upload into the Users table in the database.
  * The database is logged into before data is read line by line from uploadFile,
@@ -322,7 +316,6 @@ public class UploadData {
         }
         return result;
     }
-
     /**
      * The method manages upload into the settings table in the database.
      * The database is logged into before data is read line by line from uploadFile,

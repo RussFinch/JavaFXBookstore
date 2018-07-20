@@ -5,14 +5,12 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
-
 /**
  * This class manages the database user credentials.
  * @author russellfincham
  * @version 0.3
  * @since 17-07-18
  */
-
 public class DbCredentials {
     /**
      * This method collects database user ID, password and connection url
@@ -22,7 +20,6 @@ public class DbCredentials {
      * @throws FileNotFoundException if file cannot be accessed by
      * DbCredentials.DbUser().
      */
-
     public static String[] DbUser() throws FileNotFoundException {
 
         String[] data = new String[3];
@@ -43,14 +40,11 @@ public class DbCredentials {
             data[1] = Password;
             data[2] = DbUrl;
 
-
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return data;
     }
-
     /**
      * This method manages changes to the properties file that
      * holds DB access privileges and url.
@@ -90,7 +84,6 @@ public class DbCredentials {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return results;
     }
 }

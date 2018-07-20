@@ -1,7 +1,7 @@
 package JavaFXGui;
 
 import SqlQuery.FirstBook;
-import SqlQuery.SearchBook;
+import SqlQuery.Search.SearchBook;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -16,14 +16,12 @@ import java.net.URL;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
-
 /**
  * controller class for Home.fxml.
  * @author russellfincham
  * @version 0.4
  * @since 18-07-18
  */
-
 public class HomeController implements Initializable {
     /**
      * Control for Home interface.  Allows for Book Search,
@@ -35,7 +33,6 @@ public class HomeController implements Initializable {
 
     @FXML
     private Label lblSearchResultCounter;
-
     //Book SearchBook TextFields
     @FXML
     private TextField txtBookIdSearch;
@@ -49,7 +46,6 @@ public class HomeController implements Initializable {
     private DatePicker txtBookEndPubDateSearch;
     @FXML
     private TextField txtBookEditionSearch;
-
     //Author Search TextFields
     @FXML
     private TextField txtAuthorIDSearch;
@@ -57,19 +53,16 @@ public class HomeController implements Initializable {
     private TextField txtAuthorFNameSearch;
     @FXML
     private TextField txtAuthorLNameSearch;
-
     //Genre Search TextFields
     @FXML
     private TextField txtGenreIDSearch;
     @FXML
     private TextField txtGenreNameSearch;
-
     //Publisher Search TextFields
     @FXML
     private TextField txtPublisherIDSearch;
     @FXML
     private TextField txtPublisherNameSearch;
-
     //Book Results TextFields
     @FXML
     private TextField txtBookIdResult;
@@ -91,7 +84,6 @@ public class HomeController implements Initializable {
     private TextField txtBookGenreIdResult;
     @FXML
     private TextField txtBookQtyResult;
-
     //Author Results TextFields
     @FXML
     private TextField txtAuthorIDResult;
@@ -99,13 +91,11 @@ public class HomeController implements Initializable {
     private TextField txtAuthorFNameResult;
     @FXML
     private TextField txtAuthorLNameResult;
-
     //Genre Results TextFields
     @FXML
     private TextField txtGenreIDResult;
     @FXML
     private TextField txtGenreNameResult;
-
     //Publisher Results TextFields
     @FXML
     private TextField txtPublisherIdResult;
@@ -123,8 +113,6 @@ public class HomeController implements Initializable {
     private TextField txtPublisherTownResult;
     @FXML
     private TextField txtPublisherCountyResult;
-
-    //Buttons
     @FXML
     private void btnBookSearchAction() throws Exception {
 
@@ -173,7 +161,6 @@ public class HomeController implements Initializable {
 */
         SearchDisplayResult(listNum, searchBookResult);
     }
-
     @FXML
     private void SearchDisplayResult (int listNum, ArrayList<String[]> searchBookResult) {
 
@@ -209,7 +196,6 @@ public class HomeController implements Initializable {
 
         lblSearchResultCounter.setText((Integer.toString(listNum + 1)) + " of " + numRecords + " records.");
     }
-
     @FXML
     private void btnBookNextAction() {
 
@@ -220,7 +206,6 @@ public class HomeController implements Initializable {
             SearchDisplayResult(listNum, searchBookResult);
         }
     }
-
     @FXML
     private void btnBookPrevAction() {
 
@@ -229,195 +214,167 @@ public class HomeController implements Initializable {
             SearchDisplayResult(listNum, searchBookResult);
         }
     }
-
     @FXML
     private void btnBookLastAction() {
 
         listNum = searchBookResult.size() - 2;
         SearchDisplayResult(listNum, searchBookResult);
     }
-
     @FXML
     private void btnBookFirstAction() {
 
         listNum = 0;
         SearchDisplayResult(listNum, searchBookResult);
     }
-
     @FXML
     private void btnAddBookAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/AddBook.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/Add/AddBook.fxml"));
         Stage addBookStage = new Stage();
         Scene addBookScene = new Scene(parent);
         addBookStage.setScene(addBookScene);
         addBookStage.setTitle("JavaFX BookStore..  Add Book");
         addBookStage.show();
     }
-
     @FXML
     private void btnAddAuthorAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/AddAuthor.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/Add/AddAuthor.fxml"));
         Stage addAuthorStage = new Stage();
         Scene addAuthorScene = new Scene(parent);
         addAuthorStage.setScene(addAuthorScene);
         addAuthorStage.setTitle("JavaFX BookStore..  Add Author");
         addAuthorStage.show();
     }
-
     @FXML
     private void btnAddGenreAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/AddGenre.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/Add/AddGenre.fxml"));
         Stage addGenreStage = new Stage();
         Scene addGenreScene = new Scene(parent);
         addGenreStage.setScene(addGenreScene);
         addGenreStage.setTitle("JavaFX BookStore..  Add Genre");
         addGenreStage.show();
     }
-
     @FXML
     private void btnAddPublisherAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/AddPublisher.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/Add/AddPublisher.fxml"));
         Stage addPublisherStage = new Stage();
         Scene addPublisherScene = new Scene(parent);
         addPublisherStage.setScene(addPublisherScene);
         addPublisherStage.setTitle("JavaFX BookStore..  Add Publisher");
         addPublisherStage.show();
     }
-
     @FXML
     private void btnUpdBookAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/UpdateBook.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/Update/UpdateBook.fxml"));
         Stage updBookStage = new Stage();
         Scene updBookScene = new Scene(parent);
         updBookStage.setScene(updBookScene);
         updBookStage.setTitle("JavaFX BookStore..  Update Book");
         updBookStage.show();
     }
-
     @FXML
     private void btnUpdAuthorAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/UpdateAuthor.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/Update/UpdateAuthor.fxml"));
         Stage updAuthorStage = new Stage();
         Scene updAuthorScene = new Scene(parent);
         updAuthorStage.setScene(updAuthorScene);
         updAuthorStage.setTitle("JavaFX BookStore..  Update Author");
         updAuthorStage.show();
     }
-
     @FXML
     private void btnUpdGenreAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/UpdateGenre.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/Update/UpdateGenre.fxml"));
         Stage updGenreStage = new Stage();
         Scene updGenreScene = new Scene(parent);
         updGenreStage.setScene(updGenreScene);
         updGenreStage.setTitle("JavaFX BookStore..  Update Genre");
         updGenreStage.show();
     }
-
     @FXML
     private void btnUpdPubAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/UpdatePublisher.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/Update/UpdatePublisher.fxml"));
         Stage updPublisherStage = new Stage();
         Scene updPublisherScene = new Scene(parent);
         updPublisherStage.setScene(updPublisherScene);
         updPublisherStage.setTitle("JavaFX BookStore..  Update Publisher");
         updPublisherStage.show();
     }
-
     @FXML
     private void btnDelBookAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/DeleteBook.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/Delete/DeleteBook.fxml"));
         Stage updPublisherStage = new Stage();
         Scene updPublisherScene = new Scene(parent);
         updPublisherStage.setScene(updPublisherScene);
         updPublisherStage.setTitle("JavaFX BookStore..  Delete Book");
         updPublisherStage.show();
     }
-
     @FXML
     private void btnDelAuthorAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/DeleteAuthor.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/Delete/DeleteAuthor.fxml"));
         Stage delAuthorStage = new Stage();
         Scene delAuthorScene = new Scene(parent);
         delAuthorStage.setScene(delAuthorScene);
         delAuthorStage.setTitle("JavaFX BookStore..  Delete Author");
         delAuthorStage.show();
     }
-
     @FXML
     private void btnDelGenAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/DeleteGenre.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/Delete/DeleteGenre.fxml"));
         Stage delGenreStage = new Stage();
         Scene delGenreScene = new Scene(parent);
         delGenreStage.setScene(delGenreScene);
         delGenreStage.setTitle("JavaFX BookStore..  Delete Genre");
         delGenreStage.show();
     }
-
     @FXML
     private void btnDelPubAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/DeletePublisher.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/Delete/DeletePublisher.fxml"));
         Stage delPublisherStage = new Stage();
         Scene delPublisherScene = new Scene(parent);
         delPublisherStage.setScene(delPublisherScene);
         delPublisherStage.setTitle("JavaFX BookStore..  Delete Publisher");
         delPublisherStage.show();
     }
-
     @FXML
     private void btnSetDbAccAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/DbAccess.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/Settings/DbAccess.fxml"));
         Stage setDbAccessStage = new Stage();
         Scene setDbAccessScene = new Scene(parent);
         setDbAccessStage.setScene(setDbAccessScene);
         setDbAccessStage.setTitle("JavaFX BookStore..  Setup Db Access");
         setDbAccessStage.show();
     }
-
     @FXML
     private void btnSetDbSchAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/BuildDbSchema.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/Settings/BuildDbSchema.fxml"));
         Stage SetDbSchemaStage = new Stage();
         Scene SetDbSchemaScene = new Scene(parent);
         SetDbSchemaStage.setScene(SetDbSchemaScene);
         SetDbSchemaStage.setTitle("JavaFX BookStore..  Setup Db Schema");
         SetDbSchemaStage.show();
     }
-
     @FXML
     private void btnSetUpDataAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/UploadData.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/Settings/UploadData.fxml"));
         Stage SetupDataStage = new Stage();
         Scene SetupDataScene = new Scene(parent);
         SetupDataStage.setScene(SetupDataScene);
         SetupDataStage.setTitle("JavaFX BookStore..  Upload Data");
         SetupDataStage.show();
-    }
-
-    @FXML
-    private void btnSetUsersAction() throws Exception {
-
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/SetupUsers.fxml"));
-        Stage SetupUsersStage = new Stage();
-        Scene SetupUsersScene = new Scene(parent);
-        SetupUsersStage.setScene(SetupUsersScene);
-        SetupUsersStage.setTitle("JavaFX BookStore..  Setup Users");
-        SetupUsersStage.show();
     }
     /**
      * Initializes the controller class.
@@ -465,6 +422,5 @@ public class HomeController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }

@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"Database"},{"l":"JavaFXGui"},{"l":"Main"},{"l":"SqlQuery"}]
+packageSearchIndex = [{"l":"Database"},{"l":"JavaFXGui"},{"l":"JavaFXGui.Add"},{"l":"JavaFXGui.Delete"},{"l":"JavaFXGui.Settings"},{"l":"JavaFXGui.Update"},{"l":"Main"},{"l":"SqlQuery"},{"l":"SqlQuery.Add"},{"l":"SqlQuery.Delete"},{"l":"SqlQuery.Search"},{"l":"SqlQuery.Settings"},{"l":"SqlQuery.Update"}]

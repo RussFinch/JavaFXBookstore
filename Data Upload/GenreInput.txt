@@ -1,0 +1,29 @@
+1,Action
+2,Adventure
+3,Anthology
+4,Art
+5,Autobiographies
+6,Biographies
+7,Childrens
+8,Comedy
+9,Comics
+10,Cookbooks
+11,Drama
+12,Diaries and Journals
+13,Encyclopedias/Dictionaires/Thesaurus
+14,Fantasy
+15,Guides/Travel
+16,History
+17,Health
+18,Help/Self Help
+19,Horror
+20,Mathematical
+21,Medical
+22,Mystery
+23,Mythology
+24,Poetry
+25,Religious/Spiritual/Prayer Books/New Age
+26,Romance
+27,Satire
+28,Science
+29,Science fiction

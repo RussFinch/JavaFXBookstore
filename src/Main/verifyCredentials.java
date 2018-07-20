@@ -2,16 +2,13 @@ package Main;
 
 
 import java.io.FileNotFoundException;
-
 import Database.DbCredentials;
-
 /**
  * This class manages the System login process.
  * @author russellfincham
  * @version 0.2
  * @since 05-07-18
  */
-
 public class verifyCredentials {
     /**
      * This method matches manually input user credentials against those specified

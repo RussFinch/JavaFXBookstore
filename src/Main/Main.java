@@ -5,14 +5,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
 /**
  * HomeController Class.  Launches Login interface.
  * @author russellfincham
  * @version 0.2
  * @since 04-07-18
  */
-
 public class Main extends Application {
 
     public static void main(String[] args) {

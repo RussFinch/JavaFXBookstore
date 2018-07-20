@@ -26,12 +26,11 @@ public class SettingRetrieve {
 
         String loginString[] = DbCredentials.DbUser();
 
-        //loginString[0] = userName, loginString[1] = password, loginString[2] = DbUrl
         try (
+                //loginString[0] = userName, loginString[1] = password, loginString[2] = DbUrl
                 Connection conn = DriverManager.getConnection(loginString[2], loginString[0], loginString[1]);
                 Statement stmt = conn.createStatement();
         ) {
-
             ResultSet rset = stmt.executeQuery(sqlQuery);
 
             while (rset.next()) {
@@ -41,7 +40,6 @@ public class SettingRetrieve {
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
-
         return settingValue;
     }
 }

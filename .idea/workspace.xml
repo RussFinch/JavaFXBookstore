@@ -1,127 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59e062b1-0976-42fb-b482-bb4ed7efbcf8" name="Default" comment="Settings completed on login screen for initial startup. Hardcoded properties file to src directory.">
-      <change afterPath="$PROJECT_DIR$/JavaDoc/Database/DbConnection.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/Database/DbCredentials.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/Database/SettingsConnection.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/Database/UpdatesConnection.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/Database/package-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/Database/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/Database/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/AddAuthorController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/AddBookController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/AddGenreController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/AddPublisherController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/DeleteAuthorController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/DeleteBookController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/DeleteGenreController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/DeletePublisherController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/HomeController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/UpdateAuthorController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/UpdateBookController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/UpdateGenreController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/UpdatePublisherController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/loginController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/package-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/Main/Main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/Main/package-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/Main/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/Main/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/Main/verifyCredentials.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/AddAuthor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/AddBook.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/AddGenre.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/AddPublisher.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/ChoiceBoxes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/DeleteAuthor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/DeleteBook.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/DeleteGenre.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/DeletePublisher.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/SchemaSetupManager.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/SearchAuthor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/SearchBook.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/SearchGenre.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/SearchPublisher.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/UpdateAuthor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/UpdateBook.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/UpdateGenre.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/UpdatePublisher.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/package-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/allclasses-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/allclasses-noframe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/constant-values.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/deprecated-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/element-list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/help-doc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-14.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-15.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-16.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/external/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/images/ui-bg_flat_0_aaaaaa_40x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/images/ui-bg_flat_75_ffffff_40x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/images/ui-bg_glass_65_ffffff_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/images/ui-icons_222222_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/images/ui-icons_454545_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/images/ui-icons_888888_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/jquery-1.10.2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/jquery-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/jquery-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/jquery-ui.structure.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/jquery-ui.structure.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/jszip-utils/dist/jszip-utils-ie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/jszip-utils/dist/jszip-utils-ie.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/jszip-utils/dist/jszip-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/jszip-utils/dist/jszip-utils.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/jszip/dist/jszip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery/jszip/dist/jszip.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/member-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/member-search-index.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/overview-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/overview-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/overview-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/package-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/package-search-index.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/resources/glass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/resources/x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/type-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/type-search-index.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MysqlLogin.txt" afterDir="false" />
+    <list default="true" id="59e062b1-0976-42fb-b482-bb4ed7efbcf8" name="Default" comment="Minor refactoring and gui adjustment">
+      <change afterPath="$PROJECT_DIR$/src/JavaFXGui/Settings/settingsImage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/JavaFXGui/AddAuthorController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/AddAuthorController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/JavaFXGui/AddBookController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/AddBookController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/JavaFXGui/AddGenreController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/AddGenreController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/JavaFXGui/AddPublisherController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/AddPublisherController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/JavaFXGui/DeleteAuthorController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/DeleteAuthorController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/JavaFXGui/DeleteBookController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/DeleteBookController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/JavaFXGui/DeleteGenreController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/DeleteGenreController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/JavaFXGui/DeletePublisherController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/DeletePublisherController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/JavaFXGui/UpdateAuthorController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/UpdateAuthorController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/JavaFXGui/UpdateBookController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/UpdateBookController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/JavaFXGui/UpdateGenreController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/UpdateGenreController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/JavaFXGui/UpdatePublisherController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/JavaFXGui/UpdatePublisherController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/AddAuthor.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/AddAuthor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/AddBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/AddBook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/AddGenre.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/AddGenre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/AddPublisher.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/AddPublisher.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/DeleteAuthor.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/DeleteAuthor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/DeleteBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/DeleteBook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/DeleteGenre.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/DeleteGenre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/DeletePublisher.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/DeletePublisher.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/SchemaSetupManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/SchemaSetupManager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/SearchAuthor.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/SearchAuthor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/SearchBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/SearchBook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/SearchGenre.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/SearchGenre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/SearchPublisher.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/SearchPublisher.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/UpdateAuthor.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/UpdateAuthor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/UpdateBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/UpdateBook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/UpdateGenre.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/UpdateGenre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/SqlQuery/UpdatePublisher.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/SqlQuery/UpdatePublisher.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/DbConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Database/DbCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/DbCredentials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/DbAccess.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/DbAccess.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/DbAccessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/DbAccessController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SqlQuery/SetSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/SetSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/SettingRetrieve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/SettingRetrieve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/UpdatesConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/UpdatesConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/UploadData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/UploadData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/AddAuthor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Add/AddAuthor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/AddAuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Add/AddAuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/AddBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Add/AddBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/AddBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Add/AddBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/AddGenre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Add/AddGenre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/AddGenreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Add/AddGenreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/AddPublisher.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Add/AddPublisher.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/AddPublisherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Add/AddPublisherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/BuildDbSchema.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Settings/BuildDbSchema.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/BuildDbSchemaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Settings/BuildDbSchemaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/DbAccess.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Settings/DbAccess.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/DbAccessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Settings/DbAccessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/DeleteAuthor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Delete/DeleteAuthor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/DeleteAuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Delete/DeleteAuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/DeleteBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Delete/DeleteBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/DeleteBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Delete/DeleteBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/DeleteGenre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Delete/DeleteGenre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/DeleteGenreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Delete/DeleteGenreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/DeletePublisher.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Delete/DeletePublisher.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/DeletePublisherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Delete/DeletePublisherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/SettingsImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/UpdateAuthor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Update/UpdateAuthor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/UpdateAuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Update/UpdateAuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/UpdateBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Update/UpdateBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/UpdateBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Update/UpdateBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/UpdateGenre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Update/UpdateGenre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/UpdateGenreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Update/UpdateGenreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/UpdatePublisher.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Update/UpdatePublisher.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/UpdatePublisherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Update/UpdatePublisherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/UploadData.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Settings/UploadData.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/UploadDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/Settings/UploadDataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaFXGui/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaFXGui/loginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/verifyCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/verifyCredentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MysqlLogin.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/MysqlLogin.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/AddAuthor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Add/AddAuthor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/AddBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Add/AddBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/AddGenre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Add/AddGenre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/AddPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Add/AddPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/ChoiceBoxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/ChoiceBoxes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/DeleteAuthor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Delete/DeleteAuthor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/DeleteBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Delete/DeleteBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/DeleteGenre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Delete/DeleteGenre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/DeletePublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Delete/DeletePublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/FirstBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/FirstBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/RetrieveSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Settings/RetrieveSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/SchemaSetupManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Settings/SchemaSetupManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/SearchAuthor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Search/SearchAuthor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/SearchBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Search/SearchBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/SearchGenre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Search/SearchGenre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/SearchPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Search/SearchPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/SetSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Settings/SetSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/UpdateAuthor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Update/UpdateAuthor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/UpdateBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Update/UpdateBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/UpdateGenre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Update/UpdateGenre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SqlQuery/UpdatePublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlQuery/Update/UpdatePublisher.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -133,11 +108,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DbAccessController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JavaFXGui/DbAccessController.java">
+      <file leaf-file-name="SchemaSetupManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SqlQuery/Settings/SchemaSetupManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+            <state relative-caret-position="15">
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,45 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DbAccess.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JavaFXGui/DbAccess.fxml">
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="119" selection-start-line="26" selection-start-column="119" selection-end-line="26" selection-end-column="119" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DbCredentials.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Database/DbCredentials.java">
+      <file leaf-file-name="MysqlLogin.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MysqlLogin.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SetSettings.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SqlQuery/SetSettings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="verifyCredentials.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/verifyCredentials.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="45">
+              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -193,8 +134,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -204,57 +145,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/SqlQuery/ComboBoxes.java" />
-        <option value="$PROJECT_DIR$/src/JavaFXGui/DeletePublisherController.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/PublisherSearch.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/GenreSearch.java" />
-        <option value="$PROJECT_DIR$/src/JavaFXGui/DeleteGenre.fxml" />
-        <option value="$PROJECT_DIR$/src/JavaFXGui/DeleteGenreController.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/AuthorSearch.java" />
-        <option value="$PROJECT_DIR$/src/JavaFXGui/DeleteAuthor.fxml" />
-        <option value="$PROJECT_DIR$/src/JavaFXGui/DeleteAuthorController.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/SetupManager.java" />
-        <option value="$PROJECT_DIR$/src/Database/UpdatesConnection.java" />
-        <option value="$PROJECT_DIR$/src/Main/verifyCredentials.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/SearchBook.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/SearchGenre.java" />
-        <option value="$PROJECT_DIR$/src/Database/DbConnection.java" />
-        <option value="$PROJECT_DIR$/src/Database/SettingsConnection.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/AddAuthor.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/AddBook.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/AddGenre.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/AddPublisher.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/ChoiceBoxes.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/DeleteAuthor.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/DeleteBook.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/DeleteGenre.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/DeletePublisher.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/SearchAuthor.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/SearchPublisher.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/UpdateAuthor.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/UpdateBook.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/UpdatePublisher.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/UpdateGenre.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/FirstBook.java" />
-        <option value="$PROJECT_DIR$/src/JavaFXGui/AddAuthor.fxml" />
-        <option value="$PROJECT_DIR$/src/JavaFXGui/Home.fxml" />
-        <option value="$PROJECT_DIR$/src/JavaFXGui/BuildDbSchema.fxml" />
-        <option value="$PROJECT_DIR$/src/JavaFXGui/BuildDbSchemaController.java" />
-        <option value="$PROJECT_DIR$/src/JavaFXGui/DbAccess.fxml" />
-        <option value="$PROJECT_DIR$/src/Main/PropertiesInterface.java" />
-        <option value="$PROJECT_DIR$/src/JavaFXGui/UploadData.fxml" />
-        <option value="$PROJECT_DIR$/src/JavaFXGui/HomeController.java" />
-        <option value="$PROJECT_DIR$/src/Database/SettingRetrieve.java" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/RetrieveSettings.java" />
-        <option value="$PROJECT_DIR$/src/Database/UploadData.java" />
         <option value="$PROJECT_DIR$/src/JavaFXGui/UploadDataController.java" />
         <option value="$PROJECT_DIR$/src/JavaFXGui/Login.fxml" />
-        <option value="$PROJECT_DIR$/src/JavaFXGui/loginController.java" />
         <option value="$PROJECT_DIR$/src/Database/SqlLogin.txt" />
-        <option value="$PROJECT_DIR$/src/SqlQuery/SchemaSetupManager.java" />
         <option value="$PROJECT_DIR$/src/JavaFXGui/DbAccessController.java" />
-        <option value="$PROJECT_DIR$/src/Database/DbCredentials.java" />
         <option value="$PROJECT_DIR$/src/SqlQuery/SetSettings.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/SchemaSetupManager.java" />
+        <option value="$PROJECT_DIR$/src/JavaFXGui/Settings/Users.fxml" />
+        <option value="$PROJECT_DIR$/src/Database/DbConnection.java" />
+        <option value="$PROJECT_DIR$/src/Database/DbCredentials.java" />
+        <option value="$PROJECT_DIR$/src/Database/SettingRetrieve.java" />
+        <option value="$PROJECT_DIR$/src/Database/UpdatesConnection.java" />
+        <option value="$PROJECT_DIR$/src/Database/UploadData.java" />
+        <option value="$PROJECT_DIR$/src/JavaFXGui/Add/AddAuthorController.java" />
+        <option value="$PROJECT_DIR$/src/JavaFXGui/Add/AddBookController.java" />
+        <option value="$PROJECT_DIR$/src/JavaFXGui/Add/AddGenreController.java" />
+        <option value="$PROJECT_DIR$/src/JavaFXGui/Add/AddPublisherController.java" />
+        <option value="$PROJECT_DIR$/src/JavaFXGui/Delete/DeleteAuthorController.java" />
+        <option value="$PROJECT_DIR$/src/JavaFXGui/Delete/DeleteBookController.java" />
+        <option value="$PROJECT_DIR$/src/JavaFXGui/Delete/DeleteGenreController.java" />
+        <option value="$PROJECT_DIR$/src/JavaFXGui/Delete/DeletePublisherController.java" />
+        <option value="$PROJECT_DIR$/src/JavaFXGui/Settings/BuildDbSchemaController.java" />
+        <option value="$PROJECT_DIR$/src/JavaFXGui/Settings/DbAccessController.java" />
+        <option value="$PROJECT_DIR$/src/JavaFXGui/Settings/UploadDataController.java" />
+        <option value="$PROJECT_DIR$/src/JavaFXGui/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/JavaFXGui/loginController.java" />
+        <option value="$PROJECT_DIR$/src/Main/Main.java" />
+        <option value="$PROJECT_DIR$/src/Main/verifyCredentials.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Add/AddAuthor.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Add/AddBook.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Add/AddGenre.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Add/AddPublisher.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Delete/DeleteAuthor.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Delete/DeleteBook.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Delete/DeleteGenre.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Delete/DeletePublisher.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Search/SearchAuthor.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Search/SearchBook.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Search/SearchGenre.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Search/SearchPublisher.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Settings/RetrieveSettings.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Settings/SchemaSetupManager.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Settings/SetSettings.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Update/UpdateAuthor.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Update/UpdateBook.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Update/UpdateGenre.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/Update/UpdatePublisher.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/ChoiceBoxes.java" />
+        <option value="$PROJECT_DIR$/src/SqlQuery/FirstBook.java" />
+        <option value="$PROJECT_DIR$/src/JavaFXGui/Home.fxml" />
+        <option value="$PROJECT_DIR$/src/JavaFXGui/Settings/UploadData.fxml" />
+        <option value="$PROJECT_DIR$/src/MysqlLogin.txt" />
       </list>
     </option>
   </component>
@@ -290,13 +231,14 @@
               <item name="JavaFXBookStore" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaFXBookStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaFXGui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaFXBookStore" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaFXBookStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="JavaFXGui" type="462c0819:PsiDirectoryNode" />
+              <item name="Settings" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaFXBookStore" type="b2602c69:ProjectViewProjectNode" />
@@ -309,6 +251,13 @@
               <item name="JavaFXBookStore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="SqlQuery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaFXBookStore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaFXBookStore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SqlQuery" type="462c0819:PsiDirectoryNode" />
+              <item name="Settings" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -324,7 +273,17 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="SqlQuery" />
+      <recent name="SqlQuery.Settings" />
+      <recent name="SqlQuery.Search" />
+      <recent name="SqlQuery.Update" />
+      <recent name="SqlQuery.Delete" />
+      <recent name="SqlQuery.Add" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/JavaFXGui/Settings" />
+      <recent name="$PROJECT_DIR$/src/JavaFXGui/Update" />
+      <recent name="$PROJECT_DIR$/src/JavaFXGui/Delete" />
+      <recent name="$PROJECT_DIR$/src/JavaFXGui/Add" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -490,7 +449,21 @@
       <option name="project" value="LOCAL" />
       <updated>1532070439577</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Settings completed on login screen for initial startup. Hardcoded properties file to src directory.">
+      <created>1532072178926</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1532072178927</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Resolved issues with \ in proprties file.">
+      <created>1532078246489</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1532078246489</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -512,14 +485,14 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5054687" side_tool="true" weight="0.509366" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5058594" side_tool="true" weight="0.38400576" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49453124" visible="true" weight="0.38400576" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49414062" visible="true" weight="0.38400576" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13242188" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.153125" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49960938" weight="0.32925072" />
       <window_info id="Learn" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -552,291 +525,70 @@
     <MESSAGE value="Database Access and Schema Setup." />
     <MESSAGE value="Data Upload manager complete. begining setting add to login screen." />
     <MESSAGE value="Settings completed on login screen for initial startup. Hardcoded properties file to src directory." />
-    <option name="LAST_COMMIT_MESSAGE" value="Settings completed on login screen for initial startup. Hardcoded properties file to src directory." />
+    <MESSAGE value="Resolved issues with \ in proprties file." />
+    <MESSAGE value="Minor refactoring and gui adjustment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor refactoring and gui adjustment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="21" />
+      <option name="time" value="24" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/DeleteBook.java">
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Update/UpdateGenreController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        <state relative-caret-position="-197">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/DeleteGenre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/DeletePublisher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/SearchAuthor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/SearchGenre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="70" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/SearchPublisher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/UpdateAuthor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/UpdateBook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/UpdatePublisher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaDoc/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/SearchBook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/DeletePublisher.fxml">
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Update/UpdatePublisher.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="42" column="115" selection-start-line="42" selection-start-column="84" selection-end-line="42" selection-end-column="115" />
-        </state>
+        <state relative-caret-position="-61" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/FirstBook.java">
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Update/UpdatePublisherController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+        <state relative-caret-position="-797">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Home.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="124" selection-start-line="35" selection-start-column="124" selection-end-line="35" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/BuildDbSchema.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/AddPublisherController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/BuildDbSchemaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="32" column="30" lean-forward="true" selection-end-line="89" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/AddBookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/PropertiesInterface.java" />
-    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/AddBook.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/AddAuthorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/AddAuthor.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="77" lean-forward="true" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/UpdateGenre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="35" column="63" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="35" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/AddAuthor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="48" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="28" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/RetrieveSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/AddGenre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/UploadData.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/javafx.graphics/javafx/scene/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="8865" selection-start-line="8865" selection-end-line="8865" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/javafx.controls/javafx/scene/control/Button.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="201" selection-start-line="201" selection-end-line="201" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/javafx.graphics/javafx/scene/Scene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="2613" selection-start-line="2613" selection-end-line="2613" />
-          <folding>
-            <element signature="e#70522#70523#0" expanded="true" />
-            <element signature="e#70568#70569#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/javafx.base/javafx/event/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="197" selection-start-line="197" selection-end-line="197" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="1670" selection-start-line="1670" selection-end-line="1670" />
-          <folding>
-            <element signature="e#67760#67761#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/SqlLogin.txt" />
-    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="381" column="8" lean-forward="true" selection-start-line="381" selection-start-column="8" selection-end-line="386" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/UpdatesConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="30" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/UploadData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="762">
-          <caret line="373" column="32" selection-start-line="373" selection-start-column="32" selection-end-line="373" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/SqlLogin.txt" />
     <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Login.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
+        <state relative-caret-position="486">
           <caret line="48" column="170" selection-start-line="48" selection-start-column="170" selection-end-line="48" selection-end-column="170" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/UploadDataController.java">
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Settings/UsersController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="105" column="45" lean-forward="true" selection-start-line="99" selection-start-column="8" selection-end-line="105" selection-end-column="45" />
+        <state relative-caret-position="30">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Settings/Users.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/DbConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/DbCredentials.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="55" lean-forward="true" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -845,30 +597,145 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Database/SettingRetrieve.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="3" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/DbConnection.java">
+    <entry file="file://$PROJECT_DIR$/src/Database/UpdatesConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+        <state relative-caret-position="315">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MysqlLogin.txt" />
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/SchemaSetupManager.java">
+    <entry file="file://$PROJECT_DIR$/src/Database/UploadData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1142">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        <state relative-caret-position="-107">
+          <caret line="317" column="5" selection-start-line="317" selection-start-column="5" selection-end-line="317" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/loginController.java">
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Add/AddAuthorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="703">
+          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Add/AddBookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="137" column="9" selection-start-line="137" selection-start-column="9" selection-end-line="137" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Add/AddGenreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Add/AddPublisherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-197">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Delete/DeleteAuthorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Delete/DeleteBookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="80" column="57" selection-start-line="80" selection-start-column="57" selection-end-line="80" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Delete/DeleteGenreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Delete/DeletePublisherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="82" column="7" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Settings/BuildDbSchemaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Settings/DbAccessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Settings/UploadDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="192" column="5" selection-start-line="192" selection-start-column="5" selection-end-line="192" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -877,46 +744,263 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/verifyCredentials.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Add/AddAuthor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Add/AddBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Add/AddGenre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Add/AddPublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Delete/DeleteAuthor.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/DbCredentials.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/DbAccess.fxml">
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Delete/DeleteBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Delete/DeleteGenre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Delete/DeletePublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Search/SearchAuthor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Search/SearchBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Search/SearchGenre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Search/SearchPublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Settings/RetrieveSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Settings/SetSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Update/UpdateAuthor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Update/UpdateBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Update/UpdateGenre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Update/UpdatePublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/ChoiceBoxes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/FirstBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Upload/AuthorInput.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Home.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="254" column="110" selection-start-line="254" selection-start-column="110" selection-end-line="254" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6345">
+          <caret line="423" column="9" selection-start-line="423" selection-start-column="9" selection-end-line="423" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/loginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/Settings/UploadData.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="119" selection-start-line="26" selection-start-column="119" selection-end-line="26" selection-end-column="119" />
-        </state>
-      </provider>
+      <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaFXGui/DbAccessController.java">
+    <entry file="file://$PROJECT_DIR$/src/SqlQuery/Settings/SchemaSetupManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        <state relative-caret-position="15">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlQuery/SetSettings.java">
+    <entry file="file://$PROJECT_DIR$/src/MysqlLogin.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
         </state>
       </provider>
     </entry>

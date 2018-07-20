@@ -1,4 +1,13 @@
 Database
 JavaFXGui
+JavaFXGui.Add
+JavaFXGui.Delete
+JavaFXGui.Settings
+JavaFXGui.Update
 Main
 SqlQuery
+SqlQuery.Add
+SqlQuery.Delete
+SqlQuery.Search
+SqlQuery.Settings
+SqlQuery.Update

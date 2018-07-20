@@ -3,7 +3,6 @@ package SqlQuery;
 import Database.DbConnection;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-
 /**
  * This class builds choice box data for
  * selection
@@ -11,7 +10,6 @@ import java.util.ArrayList;
  * @version 0.1
  * @since 16-07-18
  */
-
 public class ChoiceBoxes {
     /**
      * This method generates SQL for displaying
@@ -31,7 +29,6 @@ public class ChoiceBoxes {
                 resultTable.add(s);
             }
         }
-
         return resultTable;
     }
     /**
@@ -52,7 +49,6 @@ public class ChoiceBoxes {
                 resultTable.add(s);
             }
         }
-
         return resultTable;
     }
     /**
@@ -73,7 +69,6 @@ public class ChoiceBoxes {
                 resultTable.add(s);
             }
         }
-
         return resultTable;
     }
     /**
@@ -95,7 +90,6 @@ public class ChoiceBoxes {
                 resultTable.add(s);
             }
         }
-
         return resultTable;
     }
     /**
@@ -116,7 +110,6 @@ public class ChoiceBoxes {
                 resultTable.add(s);
             }
         }
-
         return resultTable;
     }
 }

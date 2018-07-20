@@ -1,0 +1,5 @@
+3001,One Hundred Years of Solitude,Equally tragic joyful and comical.  A seamless blend of fantasy and reality,14,6.47,GGM001,PEN245,2000/08/31,1,27
+3002,Tender is the Night, Between the First World War and the Wall Street Crash the French Riviera was the stylish place for wealthy Americans to visit.,26,3.96,FSF001,PEN245,2010/11/04,1,45
+3003,Wuthering Heights,Lockwood. The new tenant of Thrushcross Grange situated on the bleak Yorkshire moors is forced to seek shelter.,26,11.99,EB001,PEN245,2004/11/11,2,36
+3004,Pride and Prejudice,When Elizabeth Bennet first meets eligible bachelor Fitzwilliam Darcy she thinks him arrogant and conceited.,11,10.19,JA001,PEN245,2012/12/06,3,12
+3005,A Brief History of Time,Was there a beginning of time.. Could time run backwards.. Is the universe infinite or does it have boundaries..,28,4.99,SH001,TR0013,2015/02/05,3,76

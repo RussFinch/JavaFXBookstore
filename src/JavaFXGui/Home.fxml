@@ -122,7 +122,6 @@
                       <MenuItem mnemonicParsing="false" onAction="#btnSetDbAccAction" text="DB Access" />
                       <MenuItem mnemonicParsing="false" onAction="#btnSetDbSchAction" text="DB Schema" />
                         <MenuItem mnemonicParsing="false" onAction="#btnSetUpDataAction" text="Upload Data" />
-                        <MenuItem mnemonicParsing="false" onAction="#btnSetUsersAction" text="Users" />
                     </items>
                   </MenuButton>
               </buttons>
@@ -225,38 +224,6 @@
                         <TextField fx:id="txtPublisherAddress3Result" editable="false" layoutX="477.0" layoutY="93.0" prefHeight="27.0" prefWidth="213.0" />
                      </children>
                   </Group>
-                  <MenuButton layoutX="390.0" layoutY="421.0" mnemonicParsing="false" popupSide="TOP" text="Add">
-                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#btnAddBookAction" text="Book" />
-                        <MenuItem mnemonicParsing="false" onAction="#btnAddAuthorAction" text="Author" />
-                        <MenuItem mnemonicParsing="false" onAction="#btnAddGenreAction" text="Genre" />
-                        <MenuItem mnemonicParsing="false" onAction="#btnAddPublisherAction" text="Publisher" />
-                     </items>
-                  </MenuButton>
-                  <MenuButton layoutX="466.0" layoutY="421.0" mnemonicParsing="false" popupSide="TOP" text="Update">
-                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#btnUpdBookAction" text="Book" />
-                        <MenuItem mnemonicParsing="false" onAction="#btnUpdAuthorAction" text="Author" />
-                        <MenuItem mnemonicParsing="false" onAction="#btnUpdGenreAction" text="Genre" />
-                        <MenuItem mnemonicParsing="false" onAction="#btnUpdPubAction" text="Publisher" />
-                     </items>
-                  </MenuButton>
-                  <MenuButton layoutX="551.0" layoutY="421.0" mnemonicParsing="false" popupSide="TOP" text="Delete">
-                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#btnDelBookAction" text="Book" />
-                        <MenuItem mnemonicParsing="false" onAction="#btnDelAuthorAction" text="Author" />
-                        <MenuItem mnemonicParsing="false" onAction="#btnDelGenAction" text="Genre" />
-                        <MenuItem mnemonicParsing="false" onAction="#btnDelPubAction" text="Publisher" />
-                     </items>
-                  </MenuButton>
-                  <MenuButton layoutX="648.0" layoutY="421.0" mnemonicParsing="false" popupSide="TOP" text="Settings">
-                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#btnSetDbAccAction" text="DB Access" />
-                        <MenuItem mnemonicParsing="false" onAction="#btnSetDbSchAction" text="DB Schema" />
-                        <MenuItem mnemonicParsing="false" onAction="#btnSetUpDataAction" text="Upload Data" />
-                        <MenuItem mnemonicParsing="false" onAction="#btnSetUsersAction" text="Users" />
-                     </items>
-                  </MenuButton>
                </children>
             </Pane>
          </children>

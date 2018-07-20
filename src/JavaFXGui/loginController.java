@@ -12,18 +12,15 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
 /**
  * controller class for Login.fxml.
  * @author russellfincham
  * @version 0.2
  * @since 04-07-18
  */
-
 public class loginController implements Initializable {
     /**
      * Control for Login interface.  sets up user verification
@@ -61,14 +58,13 @@ public class loginController implements Initializable {
     @FXML
     private void btnSettingsAction() throws IOException {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/DbAccess.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/Settings/DbAccess.fxml"));
         Stage setDbAccessStage = new Stage();
         Scene setDbAccessScene = new Scene(parent);
         setDbAccessStage.setScene(setDbAccessScene);
         setDbAccessStage.setTitle("JavaFX BookStore..  Setup Db Access");
         setDbAccessStage.show();
     }
-
     /**
      * Initializes the controller class.
      * @param url

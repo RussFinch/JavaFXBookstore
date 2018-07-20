@@ -1,11 +1,9 @@
 package SqlQuery;
 
 import Database.DbConnection;
-
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * This class Collect details of first book in database when
  * system initialises.
@@ -13,7 +11,6 @@ import java.util.List;
  * @version 0.1
  * @since 18-07-18
  */
-
 public class FirstBook {
     /**
      * This method generates SQL to find the first entry in the

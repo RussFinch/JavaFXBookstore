@@ -13,7 +13,6 @@ import java.util.List;
  */
 
 public class DbConnection {
-
     /**
     * This method manages Data collection from the database.
     * It receives the query which it then passes.  It generates
@@ -23,7 +22,6 @@ public class DbConnection {
     * @param sqlQuery Query to be run against database.
     * @return ListArray String[] returned to calling method..
     */
-
     public static List<String[]> Manager(String sqlQuery) throws FileNotFoundException {
 
         List<String[]> resultTable = new ArrayList<>();
@@ -34,7 +32,6 @@ public class DbConnection {
                 Connection conn = DriverManager.getConnection(loginString[2], loginString[0], loginString[1]);
                 Statement stmt = conn.createStatement()
         ) {
-
             ResultSet rset = stmt.executeQuery(sqlQuery);
             int nCol = rset.getMetaData().getColumnCount();
 
