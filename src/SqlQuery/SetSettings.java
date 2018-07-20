@@ -18,7 +18,6 @@ public class SetSettings {
  * database connection manager SettingRetrieve.querySettings.
  * @param settingName Name of the setting to be updated
  * @param value new value for the setting to be updated
- * @return String result of SQL transaction settingValue.
 */
 
     public static void Setting (String settingName, String value) {

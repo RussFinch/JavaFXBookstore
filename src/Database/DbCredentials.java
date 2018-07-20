@@ -23,11 +23,11 @@ public class DbCredentials {
      * DbCredentials.DbUser().
      */
 
-    public final static String[] DbUser() throws FileNotFoundException {
+    public static String[] DbUser() throws FileNotFoundException {
 
         String[] data = new String[3];
 
-        FileInputStream in = new FileInputStream("/Users/russellfincham/documents/temp/MySqlLogin.txt");
+        FileInputStream in = new FileInputStream("src/MySqlLogin.txt");
         Properties properties = new Properties();
 
         try {
@@ -61,7 +61,7 @@ public class DbCredentials {
      */
     public static String DbAccessProperties(String newPropertyValue, String value) throws FileNotFoundException {
 
-        FileInputStream in = new FileInputStream("/Users/russellfincham/documents/temp/MySqlLogin.txt");
+        FileInputStream in = new FileInputStream("src/MySqlLogin.txt");
         Properties properties = new Properties();
 
         try {
@@ -69,7 +69,7 @@ public class DbCredentials {
             properties.load(in);
             in.close();
 
-            FileOutputStream out = new FileOutputStream("/Users/russellfincham/documents/temp/MySqlLogin.txt");
+            FileOutputStream out = new FileOutputStream("src/MySqlLogin.txt");
 
             //Set new values for system properties.
             properties.setProperty(newPropertyValue, value);
