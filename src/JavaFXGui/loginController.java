@@ -13,6 +13,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -29,6 +30,7 @@ public class loginController implements Initializable {
      * process activated by button click or pressing Enter.
      * Enter key configured in fxml using defaultButton="true"
      * Then launches the main system window upon successful login.
+     * Also provides access to DB user settings.
      */
     @FXML
     private TextField txtUserID;
@@ -55,6 +57,16 @@ public class loginController implements Initializable {
             stage.setTitle("JavaFX BookStore..");
             stage.show();
         }
+    }
+    @FXML
+    private void btnSettingsAction() throws IOException {
+
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/DbAccess.fxml"));
+        Stage setDbAccessStage = new Stage();
+        Scene setDbAccessScene = new Scene(parent);
+        setDbAccessStage.setScene(setDbAccessScene);
+        setDbAccessStage.setTitle("JavaFX BookStore..  Setup Db Access");
+        setDbAccessStage.show();
     }
 
     /**

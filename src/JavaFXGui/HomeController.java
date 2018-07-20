@@ -401,11 +401,11 @@ public class HomeController implements Initializable {
     @FXML
     private void btnSetUpDataAction() throws Exception {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/SetupData.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/JavaFXGui/UploadData.fxml"));
         Stage SetupDataStage = new Stage();
         Scene SetupDataScene = new Scene(parent);
         SetupDataStage.setScene(SetupDataScene);
-        SetupDataStage.setTitle("JavaFX BookStore..  Setup Data");
+        SetupDataStage.setTitle("JavaFX BookStore..  Upload Data");
         SetupDataStage.show();
     }
 

@@ -10,7 +10,7 @@ import java.sql.*;
  * @since 17-07-18
  */
 
-public class SettingsConnection {
+public class SettingRetrieve {
     /**
      * This method is used for all queries that require the value of
      * a system setting to be returned.

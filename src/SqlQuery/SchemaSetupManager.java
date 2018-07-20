@@ -9,8 +9,8 @@ import java.io.FileNotFoundException;
  * This class creates the database schema when executed on system
  * first use.
  * @author russellfincham
- * @version 0.1
- * @since 09-07-18
+ * @version 0.2
+ * @since 19-07-18
  */
 
 public class SchemaSetupManager {
@@ -111,7 +111,16 @@ public class SchemaSetupManager {
         String sqlCreateTableSettings = "CREATE TABLE IF NOT EXISTS settings "
                 + "(setting_name VARCHAR(255),"
                 + " value VARCHAR(255),"
-                + " PRIMARY KEY (setting_name));";
+                + " PRIMARY KEY (setting_name));"
+                + " INSERT INTO settings (setting_name, value)"
+                + " VALUES"
+                + " ('authorsUpload','unset'),"
+                + " ('booksUpload','unset'),"
+                + " ('genreUpload','unset'),"
+                + " ('publishersUpload','unset'),"
+                + " ('settingsUpload','unset'),"
+                + " ('usersUpload','unset'),"
+                + " ('dbLoginFile','unset'),";
 
         String result = UpdatesConnection.queryDatabase(sqlCreateTableSettings);
 
